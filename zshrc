@@ -30,7 +30,7 @@ ZSH_THEME="amuse"
 
 # Set plugins to load (stored in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git chucknorris)
+plugins=()
 
 # -----------------------------------------------------------------------------
 # Source 
@@ -54,6 +54,17 @@ alias la='ls -a'
 
 # Programs
 alias irc='weechat-curses'
+
+# Git
+alias ga='git add'
+alias gaa='git add --all *'
+
+alias gco='git commit -m'
+alias gaco='git commit -am'
+
+alias gpush='git push -u origin master'
+
+alias gst='git status'
 
 # -----------------------------------------------------------------------------
 # Function 
