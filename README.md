@@ -8,7 +8,7 @@ Here are some programs I use on my desktop :
 
 	- i3 : tiling window manager
 	- dunst : desktop notification
-	- urxvt : terminal emulator
+	- termite : terminal emulator
 	- zsh : command-line shell
 	- vim : text editor
 	- tmux : terminal multiplexer
