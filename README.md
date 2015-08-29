@@ -14,5 +14,13 @@ Here are some programs I use on my desktop :
 	- tmux : terminal multiplexer
 	- weechat : irc client
 	- firefox : web browser
+	- thunderbird : email client
+	- alsa : sound
+	- libreoffice : office suite
 	- ranger/thunar : file manager
 	- feh/gpicview : image viewer
+	- mplayer/smplayer : video player
+	- transmission : bittorent client
+	- udiskie : automatic disk mounting
+	- evince/zathura : pdf viewer
+	- keepassx : password manager
