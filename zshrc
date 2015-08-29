@@ -8,6 +8,10 @@ export ZSH=/home/itech/.oh-my-zsh
 # User configuration
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 
+# Scripts
+export PATH=$PATH:$HOME/Dotfiles/Scripts
+export PATH=$PATH:$HOME/Scripts
+
 # Default programs
 export EDITOR="vim"
 export TERMINAL="termite"
@@ -70,6 +74,7 @@ alias gst='git status'
 # Function 
 # -----------------------------------------------------------------------------
 
+# Extract all kinds of file
 extract() {
     if [[ -f $1 ]]; then
         case $1 in
@@ -93,6 +98,9 @@ extract() {
         echo "'$1' is not a valid file"
     fi
 }
+
+# Transmission
+T() { ~/Scripts/blocklist && transmission-daemon && sleep 3 && transmission-remote-cli ;}
 
 # -----------------------------------------------------------------------------
 # Other 
