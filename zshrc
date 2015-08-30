@@ -71,6 +71,7 @@ alias gst='git status'
 alias cfg-i3='vim ~/Dotfiles/i3/config'
 alias cfg-termite='vim ~/Dotfiles/termite/config'
 alias cfg-zsh='vim ~/Dotfiles/zshrc'
+alias cfg-vim='vim ~/Dotfiles/vimrc'
 
 # -----------------------------------------------------------------------------
 # Function 
