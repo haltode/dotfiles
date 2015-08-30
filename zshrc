@@ -62,13 +62,15 @@ alias irc='weechat-curses'
 # Git
 alias ga='git add'
 alias gaa='git add --all *'
-
 alias gco='git commit -m'
 alias gaco='git commit -am'
-
 alias gpush='git push -u origin master'
-
 alias gst='git status'
+
+# Config file
+alias cfg-i3='vim ~/Dotfiles/i3/config'
+alias cfg-termite='vim ~/Dotfiles/termite/config'
+alias cfg-zsh='vim ~/Dotfiles/zshrc'
 
 # -----------------------------------------------------------------------------
 # Function 
