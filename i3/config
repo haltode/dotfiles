@@ -19,6 +19,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec termite
 
+# start firefox
+bindsym $mod+f exec firefox
+
 # kill focused window
 bindsym $mod+Shift+C kill
 
@@ -60,7 +63,7 @@ bindsym $mod+b split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
