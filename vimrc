@@ -102,8 +102,11 @@ map 0 ^
 " Ctrl-N stops hlsearch 
 nmap <silent> <C-N> :silent noh<CR>
 
-" Toggle NERDTree
-map <F11> :NERDTreeToggle<cr>
+" ctrlP config
+let g:ctrlp_map = "<c-p>"
+
+" Open NERDTree
+map <leader>( :NERDTreeToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
