@@ -106,7 +106,8 @@ nmap <silent> <C-N> :silent noh<CR>
 let g:ctrlp_map = "<c-p>"
 
 " Open NERDTree
-map <leader>( :NERDTreeToggle<CR>
+map <leader>' :NERDTreeToggle<CR>
+map <leader>( : GundoToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
