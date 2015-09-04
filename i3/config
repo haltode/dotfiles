@@ -33,6 +33,12 @@ bindsym $mod+Return exec termite
 # start firefox
 bindsym $mod+f exec firefox
 
+# turn the brightness level down
+bindsym $mod+Shift+N exec ~/Dotfiles/Scripts/night-time
+
+# turn the brightness level up
+bindsym $mod+Shift+D exec ~/Dotfiles/Scripts/day-time
+
 # kill focused window
 bindsym $mod+Shift+C kill
 
