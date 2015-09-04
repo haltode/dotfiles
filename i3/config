@@ -85,6 +85,9 @@ bindsym $mod+Shift+l move right
 # bindsym $mod+Shift+Up move up
 # bindsym $mod+Shift+Right move right
 
+# Disable "focus follows mouse" mode
+focus_follows_mouse no
+
 # split in horizontal orientation
 bindsym $mod+b split h
 
