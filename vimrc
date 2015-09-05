@@ -107,7 +107,16 @@ let g:ctrlp_map = "<c-p>"
 
 " Open NERDTree
 map <leader>' :NERDTreeToggle<CR>
-map <leader>( : GundoToggle<CR>
+
+" Open Gundo
+map <leader>( :GundoToggle<CR>
+
+" Tabularize shortcuts
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+
+" Open Tagbar
+map <leader>- :TagbarToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
