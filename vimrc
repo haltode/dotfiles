@@ -120,7 +120,7 @@ map <leader>- :TagbarToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colored column
 highlight ColorColumn ctermbg=blue
 set colorcolumn=81
@@ -142,3 +142,5 @@ set viminfo^=%
 " Disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+" Enable expansion with delimitMate
+let g:delimitMate_expand_cr = 1
