@@ -34,7 +34,7 @@ ZSH_THEME="amuse"
 
 # Set plugins to load (stored in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=()
+plugins=(zsh-syntax-highlighting)
 
 # -----------------------------------------------------------------------------
 # Source 
