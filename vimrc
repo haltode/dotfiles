@@ -118,6 +118,9 @@ vmap <Leader>a= :Tabularize /=<CR>
 " Open Tagbar
 map <leader>- :TagbarToggle<CR>
 
+" Spell correction
+map <leader>à "<Esc>:silent setlocal spell! spelllang=fr<CR>"
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
