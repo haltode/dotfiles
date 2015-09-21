@@ -137,6 +137,14 @@ map <Leader>h <Plug>(easymotion-linebackward)
 " Keep cursor column when JK motion
 let g:EasyMotion_startofline = 0 
 
+" Vim session config/shortcuts
+nnoremap <leader>so :OpenSession 
+nnoremap <leader>ss :SaveSession 
+nnoremap <leader>sd :DeleteSession<Cr>
+nnoremap <leader>sc :CloseSession<Cr>
+let g:session_autoload = "no"
+let g:session_autosave = "no"
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
