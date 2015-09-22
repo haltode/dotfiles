@@ -74,6 +74,7 @@ alias cfg-termite='vim ~/Dotfiles/termite/config'
 alias cfg-zsh='vim ~/Dotfiles/zshrc'
 alias cfg-vim='vim ~/Dotfiles/vimrc'
 alias cfg-x='vim ~/Dotfiles/xinitrc'
+alias cfg-tmux='vim ~/Dotfiles/tmux.conf'
 
 # -----------------------------------------------------------------------------
 # Function 
