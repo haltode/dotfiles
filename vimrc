@@ -35,6 +35,15 @@ set laststatus=2
 " Always display the tabline, even if there is only one tab
 set showtabline=2 
 
+" Disable vim instant markdown preview from autostarting
+let g:instant_markdown_autostart = 0
+
+" Disable folding in vim markdown plugin
+let g:vim_markdown_folding_disabled=1
+
+" Init pencil mode
+let g:pencil#wrapModeDefault = 'soft'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -106,20 +115,20 @@ nmap <silent> <C-N> :silent noh<CR>
 let g:ctrlp_map = "<c-p>"
 
 " Open NERDTree
-map <leader>' :NERDTreeToggle<CR>
+map <leader>& :NERDTreeToggle<CR>
 
 " Open Gundo
-map <leader>( :GundoToggle<CR>
+map <leader>" :GundoToggle<CR>
 
 " Tabularize shortcuts
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
 
 " Open Tagbar
-map <leader>- :TagbarToggle<CR>
+map <leader>é :TagbarToggle<CR>
 
 " Spell correction
-map <leader>à "<Esc>:silent setlocal spell! spelllang=fr<CR>"
+map <leader>ç "<Esc>:silent setlocal spell! spelllang=fr<CR>"
 
 " Easymotion config
 
@@ -144,6 +153,12 @@ nnoremap <leader>sd :DeleteSession<Cr>
 nnoremap <leader>sc :CloseSession<Cr>
 let g:session_autoload = "no"
 let g:session_autosave = "no"
+
+" Toggle Goyo (distraction-free) mode
+map <leader>à :Goyo<CR>
+
+" Turn on or off Pencil plugin
+map <leader>_ :TogglePencil<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
