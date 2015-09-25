@@ -12,6 +12,9 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin
 export PATH=$PATH:$HOME/Dotfiles/Scripts
 export PATH=$PATH:$HOME/Scripts
 
+# Gem
+export PATH=$PATH:$HOME/.gem/ruby/2.2.0/bin
+
 # Default programs
 export EDITOR="vim"
 export TERMINAL="termite"
@@ -19,6 +22,9 @@ export BROWSER="firefox"
 export PAGER="less"
 export MOVPLAY="smplayer"
 export PICVIEW="gpicview"
+
+# Display properly window names in tmux
+export DISABLE_AUTO_TITLE=true
 
 # -----------------------------------------------------------------------------
 # Theme
@@ -41,6 +47,8 @@ plugins=()
 # -----------------------------------------------------------------------------
 
 source $ZSH/oh-my-zsh.sh
+
+source ~/Dotfiles/tmux/tmuxinator.zsh
 
 # -----------------------------------------------------------------------------
 # Alias 
@@ -74,7 +82,7 @@ alias cfg-termite='vim ~/Dotfiles/termite/config'
 alias cfg-zsh='vim ~/Dotfiles/zshrc'
 alias cfg-vim='vim ~/Dotfiles/vimrc'
 alias cfg-x='vim ~/Dotfiles/xinitrc'
-alias cfg-tmux='vim ~/Dotfiles/tmux.conf'
+alias cfg-tmux='vim ~/Dotfiles/tmux/tmux.conf'
 
 # -----------------------------------------------------------------------------
 # Function 
