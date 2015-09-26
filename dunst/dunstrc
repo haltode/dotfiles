@@ -1,6 +1,6 @@
 # <- this tricks vim into using syntax highlighting
 [global]
-font = Gohufont 13
+font = Gohufont 12
 
 # The format of the message. Possible variables are:
 # %a appname

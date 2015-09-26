@@ -14,5 +14,8 @@ feh --bg-scale ~/Images/Desktop_Wallpaper/Wallpaper$(((RANDOM % 9) + 1)).jpg &
 # activate numlock
 numlockx &
 
+# notification system
+dunst &
+
 # i3 !
 exec i3
