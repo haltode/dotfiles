@@ -1,7 +1,7 @@
 # ~/.tmuxinator/itech.yml
 
 name: itech
-root: ~/
+#root: ~/
 
 # Optional tmux socket
 # socket_name: foo
@@ -31,7 +31,25 @@ windows:
    - irc:
       - irc
    - code:
+      layout: 3ecc,212x48,0,0{126x48,0,0,0,85x48,127,0[85x24,127,0,5,85x23,127,25,6]}
+      panes:
+         - 
+         -
+         -
    - term:
+      layout: d27f,212x48,0,0{106x48,0,0,1,105x48,107,0[105x24,107,0,7,105x23,107,25,8]}
+      panes:
+         -
+         -
+         - 
    - itechome:
+      root: ~/Documents/iTechome/
+      panes:
+         - 
    - torrent:
+      layout: 34b6,212x48,0,0[212x28,0,0,3,212x19,0,29,9]
+      panes:
+         - torrentzeu -n 25
+         - T
    - sys:
+      - htop
