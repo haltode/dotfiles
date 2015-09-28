@@ -30,8 +30,8 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec termite
 
-# start firefox
-bindsym $mod+f exec firefox
+# start firefox and thunderbird (stacked)
+bindsym $mod+i layout stacking ; exec firefox ; exec thunderbird
 
 # turn the brightness level down
 bindsym $mod+Shift+N exec ~/Dotfiles/Scripts/night_time
