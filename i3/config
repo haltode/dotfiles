@@ -30,6 +30,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec termite
 
+# start thunar file manager
+bindsym $mod+f exec thunar
+
 # start firefox and thunderbird (stacked)
 bindsym $mod+i layout stacking ; exec firefox ; exec thunderbird
 
