@@ -44,6 +44,9 @@ let g:vim_markdown_folding_disabled=1
 " Init pencil mode
 let g:pencil#wrapModeDefault = 'soft'
 
+" Grammatical correction
+let g:languagetool_jar='~/.vim/bundle/LanguageTool/software/LanguageTool-3.1/languagetool-commandline.jar'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
