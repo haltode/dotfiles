@@ -47,6 +47,9 @@ let g:pencil#wrapModeDefault = 'soft'
 " Grammatical correction
 let g:languagetool_jar='~/.vim/bundle/LanguageTool/software/LanguageTool-3.1/languagetool-commandline.jar'
 
+" Redrew only when we need to
+set lazyredraw
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -162,6 +165,9 @@ map <leader>à :Goyo<CR>
 
 " Turn on or off Pencil plugin
 map <leader>_ :TogglePencil<CR>
+
+" jk is escape
+inoremap jk <esc>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
