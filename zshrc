@@ -66,6 +66,7 @@ alias la='ls -a'
 
 # Programs
 alias irc='weechat-curses'
+alias ttmux='mux start itech'
 
 # Git
 alias ga='git add'

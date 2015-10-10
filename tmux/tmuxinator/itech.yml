@@ -53,9 +53,9 @@ windows:
          -
          - 
    - torrent:
-      layout: 34b6,212x48,0,0[212x28,0,0,3,212x19,0,29,9]
+      layout: beec,212x50,0,0[212x29,0,0{106x29,0,0,5,105x29,107,0,14},212x20,0,30,13]
+      #layout: 34b6,212x48,0,0[212x28,0,0,3,212x19,0,29,9]
       panes:
          - torrentzeu -n 25
+         - cd ~/Videos
          - T
-   - sys:
-      - htop
