@@ -50,6 +50,9 @@ let g:languagetool_jar='~/.vim/bundle/LanguageTool/software/LanguageTool-3.1/lan
 " Redrew only when we need to
 set lazyredraw
 
+" Paste mode
+set paste
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
