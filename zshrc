@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/itech/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # User configuration
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
@@ -84,6 +84,9 @@ alias cfg-zsh='vim ~/Dotfiles/zshrc'
 alias cfg-vim='vim ~/Dotfiles/vimrc'
 alias cfg-x='vim ~/Dotfiles/xinitrc'
 alias cfg-tmux='vim ~/Dotfiles/tmux/tmux.conf'
+
+# SSH
+alias sshpi='ssh pi@192.168.1.28'
 
 # -----------------------------------------------------------------------------
 # Function 

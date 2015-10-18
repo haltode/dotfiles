@@ -37,11 +37,8 @@ windows:
          -
          - 
    - code:
-      layout: 3ecc,212x48,0,0{126x48,0,0,0,85x48,127,0[85x24,127,0,5,85x23,127,25,6]}
       panes:
          - 
-         -
-         -
    - NapNac:
       root: ~/Documents/Projet/NapNac.ga
       panes:
