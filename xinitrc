@@ -17,5 +17,10 @@ numlockx &
 # notification system
 dunst &
 
+# unmute sound system (pulseaudio)
+pulseaudio --start
+pacmd set-sink-mute 1 false
+alsactl --file /var/lib/alsa/asound.state restore
+
 # i3 !
 exec i3
