@@ -12,8 +12,6 @@ windows:
          -
          - 
    - code:
-      panes:
-         - 
    - torrent:
       layout: beec,212x50,0,0[212x29,0,0{106x29,0,0,5,105x29,107,0,14},212x20,0,30,13]
       panes:

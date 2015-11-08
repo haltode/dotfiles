@@ -25,3 +25,9 @@ Here are some programs I use on my desktop :
    - **udiskie** : automatic disk mounting
    - **evince**/**zathura** : pdf viewer
    - **keepassx** : password manager
+
+## What does it look like ?
+
+![Firefox (and Thunderbird in the background)](/img/firefox.png)
+
+![Firefox (and Thunderbird in the background), with my tmux session and vim](/img/firefox_tmux_vim.png)
