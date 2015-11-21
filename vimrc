@@ -89,6 +89,11 @@ set hlsearch
 
 set ignorecase
 
+" First search for the current directory containing the current
+" file, then the current directory, then each directory under
+" the current directory
+set path=.,,**
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
