@@ -139,7 +139,7 @@ vmap <Leader>a= :Tabularize /=<CR>
 map <leader>é :TagbarToggle<CR>
 
 " Spell correction
-map <leader>ç "<Esc>:silent setlocal spell! spelllang=fr<CR>"
+map <leader>à "<Esc>:silent setlocal spell! spelllang=fr<CR>"
 
 " Easymotion config
 
@@ -165,11 +165,8 @@ nnoremap <leader>sc :CloseSession<Cr>
 let g:session_autoload = "no"
 let g:session_autosave = "no"
 
-" Toggle Goyo (distraction-free) mode
-map <leader>à :Goyo<CR>
-
 " Turn on or off Pencil plugin
-map <leader>_ :TogglePencil<CR>
+map <leader>ç :TogglePencil<CR>
 
 " jk is escape
 inoremap jk <esc>
