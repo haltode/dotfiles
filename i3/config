@@ -5,7 +5,7 @@ set $mod Mod4
 set $tag1 "1: web"
 set $tag2 "2: term"
 
-set $font_dmenu "-xos4-terminus-medium-r-*-*-14-*"
+set $font_dmenu "gohufont-13"
 
 # Show all tags and allow user to select one though dmenu
 bindsym $mod+w exec i3-dtags.sh -b -fn "$font_dmenu" 
