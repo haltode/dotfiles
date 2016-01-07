@@ -13,7 +13,7 @@ export PATH=$PATH:$HOME/Dotfiles/Scripts
 export PATH=$PATH:$HOME/Scripts
 
 # Gem
-export PATH=$PATH:$HOME/.gem/ruby/2.2.0/bin
+export PATH=$PATH:$HOME/.gem/ruby/2.3.0/bin
 
 # Default programs
 export EDITOR="vim"
