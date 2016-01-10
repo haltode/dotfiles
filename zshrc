@@ -88,6 +88,11 @@ alias cfg-tmux='vim ~/Dotfiles/tmux/tmux.conf'
 # SSH
 alias sshpi='ssh pi@192.168.1.28'
 
+# Navigation shortcut
+alias film='cd ~/Videos/Films'
+alias serie='cd ~/Videos/Series'
+alias napnac='cd ~/Projet/napnac.ga'
+
 # -----------------------------------------------------------------------------
 # Function 
 # -----------------------------------------------------------------------------
