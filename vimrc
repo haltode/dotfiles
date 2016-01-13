@@ -124,6 +124,7 @@ nmap <silent> <C-N> :silent noh<CR>
 
 " ctrlP config
 let g:ctrlp_map = "<c-p>"
+let g:ctrlp_working_path_mode = 'c'
 
 " Open NERDTree
 map <leader>& :NERDTreeToggle<CR>
