@@ -26,6 +26,17 @@ export PICVIEW="gpicview"
 # Display properly window names in tmux
 export DISABLE_AUTO_TITLE=true
 
+# Java
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk/
+export JAVA_HOME
+JRE_HOME=/usr/lib/jvm/java-8-openjkd/jre
+export JRE_HOME
+PATH=$PATH:$JAVA_HOME:$JRE_HOME
+export PATH
+
+# Anaconda
+export PATH=/home/itech/.anaconda3/bin:$PATH
+
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
