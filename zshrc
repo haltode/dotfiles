@@ -86,6 +86,8 @@ alias gco='git commit -m'
 alias gaco='git commit -am'
 alias gpush='git push -u origin master'
 alias gst='git status'
+# Fancy diff for git : https://github.com/stevemao/diff-so-fancy
+alias gdif='git diff --color | diff-so-fancy'
 
 # Config file
 alias cfg-i3='vim ~/Dotfiles/i3/config'
