@@ -35,7 +35,7 @@ PATH=$PATH:$JAVA_HOME:$JRE_HOME
 export PATH
 
 # Anaconda
-export PATH=/home/itech/.anaconda3/bin:$PATH
+#export PATH=/home/itech/.anaconda3/bin:$PATH
 
 # -----------------------------------------------------------------------------
 # Theme
