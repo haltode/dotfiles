@@ -9,7 +9,7 @@ xset -b
 udiskie --tray &
 
 # random wallpaper
-feh --bg-scale ~/Images/Desktop_Wallpaper/Wallpaper$(((RANDOM % 9) + 1)).jpg &
+feh --bg-scale ~/Images/Desktop_Wallpaper/Wallpaper$(((RANDOM % 12) + 1)).jpg &
 
 # activate numlock
 numlockx &
