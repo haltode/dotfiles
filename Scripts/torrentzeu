@@ -68,7 +68,8 @@ done
 shift `expr $OPTIND - 1`
 
 # correctly encode query
-q=`echo "$*" | tr -d '\n' | od -t x1 -A n | tr ' ' '%'`
+q=`echo "$*" | tr -d '\n' | tr ' ' '+'`
+#q=`echo "$*" | tr -d '\n' | od -t x1 -A n | tr ' ' '%'`
 
 # get results
 # Here be dragons!
