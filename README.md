@@ -25,6 +25,7 @@ Here are some programs I use on my desktop :
    - **udiskie** : automatic disk mounting
    - **evince**/**zathura** : pdf viewer
    - **keepassx** : password manager
+   - **redshift** : adjusts the color temperature of the screen
 
 ## What does it look like ?
 

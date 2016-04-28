@@ -1,3 +1,0 @@
-xrandr --output HDMI-0 --brightness 0.6
-xrandr --output VGA-0 --brightness 0.6
-
