@@ -7,7 +7,7 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = Sauce Code Powerline 11
+font = Sauce Code Pro Nerd Font 18
 scrollback_lines = 10000
 search_wrap = true
 #icon_name = terminal
@@ -25,51 +25,41 @@ browser = firefox
 # set size hints for the window
 #size_hints = false
 
-# emit escape sequences for other keys modified by Control
+# Hide links that are no longer valid in url select overlay mode
+filter_unmatched_urls = true
+
+# emit escape sequences for extra modified keys
 #modify_other_keys = false
 
 [colors]
-foreground = #c5c8c6
+#cursor = #dcdccc
+foreground = #dcdccc
 foreground_bold = #ffffff
-#foreground_dim = #888888
 background = #3f3f3f
-#cursor = #aeafad
+
+# 20% background transparency (requires a compositor)
+#background = rgba(63, 63, 63, 0.8)
 
 # if unset, will reverse foreground and background
-highlight = #d6d6d6
+highlight = #2f2f2f
 
 # colors from color0 to color254 can be set
-# Black + Grey
-color0 = #1d1f21
-color8 = #969896
-
-# Red + Bright Red
-color1 = #bf4040
-color9 = #bf4040
-
-# Green + Bright Green
-color2 = #8f9742
-color10 = #b5bd68
-
-# Yellow (Orange) + Bright Yellow (Yellow)
-color3 = #e9aa2f
-color11 = #f0db74
-
-# Blue + Bright Blue
-color4 = #1d2594
-color12 = #81a2be
-
-# Magenta (Purple) + Bright Magenta
-color5 = #a55d92
-color13 = #a55d92
-
-# Cyan (Aqua) + Bright Cyan
-color6 = #2b6651
-color14 = #8abeb7
-
-# Light Grey (Selection) + White (Current Line)
-color7 = #929593
-color15 = #ecebec
+color0 = #3f3f3f
+color1 = #705050
+color2 = #60b48a
+color3 = #dfaf8f
+color4 = #506070
+color5 = #dc8cc3
+color6 = #8cd0d3
+color7 = #dcdccc
+color8 = #709080
+color9 = #dca3a3
+color10 = #c3bf9f
+color11 = #f0dfaf
+color12 = #94bff3
+color13 = #ec93d3
+color14 = #93e0e3
+color15 = #ffffff
 
 [hints]
 #font = Monospace 12
