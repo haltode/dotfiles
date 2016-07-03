@@ -39,7 +39,7 @@ export npm_config_prefix=~/.node_modules
 
 # Default programs
 export EDITOR="vim"
-export TERM="termite"
+export TERMINAL="termite"
 export BROWSER="firefox"
 export PAGER="less"
 export MOVPLAY="vlc"
