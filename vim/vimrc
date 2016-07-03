@@ -12,7 +12,7 @@ filetype plugin on
 filetype indent on
 
 " Use powerline for vim
-set rtp+=/usr/lib/python3.4/site-packages/powerline/bindings/vim
+set rtp+=/usr/lib/python3.5/site-packages/powerline/bindings/vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
