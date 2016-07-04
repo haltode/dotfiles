@@ -19,9 +19,9 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
 
 #### Fonts
 
-- [Powerline](https://github.com/powerline/fonts)
-- [Infinality-bundle](https://wiki.archlinux.org/index.php/Infinality)
-- [Nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+- [powerline](https://github.com/powerline/fonts)
+- [infinality-bundle](https://wiki.archlinux.org/index.php/Infinality)
+- [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 
 ### Console environment
 
@@ -41,6 +41,10 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
 ### Internet
 
 #### [firefox](https://www.mozilla.org/en-US/firefox/desktop/): web brower
+
+- [tab groups](https://addons.mozilla.org/en-us/firefox/addon/tab-groups-panorama/): enable panorama feature (disabled since Firefox 45)
+- [grammalecte](https://addons.mozilla.org/en-US/firefox/addon/grammalecte-fr/): French grammar checker
+- [HTTPS-Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/): enable HTTPS automatically
 
 #### thunderbird: email client
 
