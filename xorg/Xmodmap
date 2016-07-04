@@ -1,7 +1,7 @@
 ! Capslock is now the meta key (used mainly for i3wm)
 ! Shift+Capslock acts like the normal Capslock key
 ! Left super (cmd on mac) is now a control key
-! Right super is now the right alt key on mac (used as alt-gr for french 
+! Right super is now the right alt key on mac (used as alt-gr for French 
 ! keyboard layout)
 
 clear lock
