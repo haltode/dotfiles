@@ -1,5 +1,15 @@
-! Reverse cmd and ctrl key
-remove mod4 = Super_L Super_R
-remove control = Control_L
-add mod4 = Control_L
-add control = Super_L Super_R
+! Capslock is now the meta key (used mainly for i3wm)
+! Shift+Capslock acts like the normal Capslock key
+! Left super (cmd on mac) is now a control key
+! Right super is now the right alt key on mac (used as alt-gr for french 
+! keyboard layout)
+
+clear lock
+clear control
+clear mod4
+clear mod5
+
+add mod4 = Caps_Lock
+add control = Super_L Control_L
+keycode 66 = Control_L Caps_Lock NoSymbol NoSymbol
+add mod5 = Super_R
