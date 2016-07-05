@@ -50,6 +50,10 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
 
 #### [weechat](https://weechat.org/): irc client
 
+- [buffers.pl](https://weechat.org/scripts/source/buffers.pl.html/): sidebar with list of buffers
+- [colorize_nicks.py](https://weechat.org/scripts/source/colorize_nicks.py.html/)
+- [tinyurl.py](https://weechat.org/scripts/source/tinyurl.py.html/): get tinyurl.com equivalent for ULRs
+
 ### Laptop specific
 
 #### [xf86-input-mtrack](https://github.com/p2rkw/xf86-input-mtrack): trackpad config
