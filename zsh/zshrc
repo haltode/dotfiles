@@ -75,6 +75,9 @@ source $ZSH/oh-my-zsh.sh
 # Fish-like highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Tmuxinator
+source ~/dotfiles/tmux/tmuxinator.zsh
+
 # -----------------------------------------------------------------------------
 # Alias 
 # -----------------------------------------------------------------------------
