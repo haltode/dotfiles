@@ -54,6 +54,8 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
 
 #### [xf86-input-mtrack](https://github.com/p2rkw/xf86-input-mtrack): trackpad config
 
+#### [netctl](https://github.com/joukewitteveen/netctl): manage network connections (used mostly for wifi)
+
 #### [tlp](http://linrunner.de/en/tlp/tlp.html): power manager
 
 ### Others
@@ -67,6 +69,7 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
    - **keepass**: password manager
    - **transmission**: bittorent client
    - **udiskie**: automatic disk mounting
+   - **f.lux**: adjust the color temperature of the screen
 
 ## Hardware
 
