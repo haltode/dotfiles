@@ -1,0 +1,11 @@
+# ~/.tmuxinator/internet.yml
+
+name: internet
+
+windows:
+   - irc:
+      - weechat
+   - mail:
+      - mutt
+   - RSS:
+      - newsbeuter
