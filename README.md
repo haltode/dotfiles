@@ -62,16 +62,16 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
 
 - Others
 
-   - **alsa**/**pulseaudio**: sound system
-   - **ranger**/**thunar**: file manager
-   - **sxiv**/**feh**: image viewer
-   - **vlc**/**smplayer**: video player
-   - **zathura**: pdf viewer
-   - **libreoffice**: office suite
-   - **keepass**: password manager
-   - **transmission**: bittorent client
-   - **udiskie**: automatic disk mounting
-   - **f.lux**: adjust the color temperature of the screen
+   - [alsa](http://www.alsa-project.org/main/index.php/Main_Page)/[pulseaudio](https://www.freedesktop.org/wiki/Software/PulseAudio/): sound system
+   - [ranger](http://ranger.nongnu.org/)/[thunar](http://docs.xfce.org/xfce/thunar/start): file manager
+   - [sxiv](https://github.com/muennich/sxiv)/[feh](http://feh.finalrewind.org/): image viewer
+   - [vlc](https://www.videolan.org/vlc/)/[smplayer](http://smplayer.sourceforge.net/): video player
+   - [zathura](https://pwmt.org/projects/zathura/): pdf viewer
+   - [libreoffice](https://www.libreoffice.org/): office suite
+   - [keepass](http://keepass.info/): password manager
+   - [transmission](https://www.transmissionbt.com/): bittorent client
+   - [udiskie](https://www.freedesktop.org/wiki/Software/udisks/): automatic disk mounting
+   - [f.lux](https://justgetflux.com/): adjust the color temperature of the screen
 
 ## Hardware
 
