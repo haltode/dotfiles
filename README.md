@@ -6,71 +6,61 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
 
 ## Software
 
-### Graphical environment
+- Graphical environment
 
-#### [i3wm](http://i3wm.org/): tiling window manager
+   - [i3wm](http://i3wm.org/): tiling window manager
+   - [lightdm](https://www.freedesktop.org/wiki/Software/LightDM/): display manager
 
-#### [lightdm](https://www.freedesktop.org/wiki/Software/LightDM/): display manager
+      - lightdm-webkit2-greeter
+      - [lightdm-webkit-theme-material-git](https://github.com/artur9010/lightdm-webkit-material)
 
-- lightdm-webkit2-greeter
-- [lightdm-webkit-theme-material-git](https://github.com/artur9010/lightdm-webkit-material)
+   - : notification system
+   - Fonts
 
-#### : notification
+      - [powerline](https://github.com/powerline/fonts)
+      - [infinality-bundle](https://wiki.archlinux.org/index.php/Infinality)
+      - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 
-#### Fonts
+- Console environment
 
-- [powerline](https://github.com/powerline/fonts)
-- [infinality-bundle](https://wiki.archlinux.org/index.php/Infinality)
-- [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+   - [termite](https://github.com/thestinger/termite): terminal emulator
+   - [zsh](http://www.zsh.org/): command-line shell
 
-### Console environment
+      - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh): theme and plugins
+      - [zsh-completions](https://github.com/zsh-users/zsh-completions): additional completion definitions
+      - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting): fish-like syntax highlighting
+      - [z script](https://github.com/rupa/z): easy way to go to most frequent directories
 
-#### [termite](https://github.com/thestinger/termite): terminal emulator
+   - [vim](http://www.vim.org/): text editor
+   - [tmux](https://tmux.github.io/): terminal multiplexer
 
-#### [zsh](http://www.zsh.org/): command-line shell
+      - [tmuxinator](https://github.com/tmuxinator/tmuxinator): manage tmux sessions
 
-- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh): theme and plugins
-- [zsh-completions](https://github.com/zsh-users/zsh-completions): additional completion definitions
-- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting): fish-like syntax highlighting
-- [z script](https://github.com/rupa/z): easy way to go to most frequent directories
+- Internet
 
-#### [vim](http://www.vim.org/): text editor
+   - [firefox](https://www.mozilla.org/en-US/firefox/desktop/): web brower
 
-#### [tmux](https://tmux.github.io/): terminal multiplexer
+      - [tab groups](https://addons.mozilla.org/en-us/firefox/addon/tab-groups-panorama/): enable panorama feature (disabled since Firefox 45)
+      - [grammalecte](https://addons.mozilla.org/en-US/firefox/addon/grammalecte-fr/): French grammar checker
+      - [HTTPS-Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/): enable HTTPS automatically
 
-- [tmuxinator](https://github.com/tmuxinator/tmuxinator): manage tmux sessions
+   - : email client
+   - [weechat](https://weechat.org/): irc client
 
-### Internet
+      - [buffers.pl](https://weechat.org/scripts/source/buffers.pl.html/): sidebar with list of buffers
+      - [colorize_nicks.py](https://weechat.org/scripts/source/colorize_nicks.py.html/)
+      - [tinyurl.py](https://weechat.org/scripts/source/tinyurl.py.html/): get tinyurl.com equivalent for ULRs
 
-#### [firefox](https://www.mozilla.org/en-US/firefox/desktop/): web brower
+- Laptop specific
 
-- [tab groups](https://addons.mozilla.org/en-us/firefox/addon/tab-groups-panorama/): enable panorama feature (disabled since Firefox 45)
-- [grammalecte](https://addons.mozilla.org/en-US/firefox/addon/grammalecte-fr/): French grammar checker
-- [HTTPS-Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/): enable HTTPS automatically
+   - [xf86-input-mtrack](https://github.com/p2rkw/xf86-input-mtrack): trackpad config
+   - [netctl](https://github.com/joukewitteveen/netctl): manage network connections (used mostly for wifi)
+   - [tlp](http://linrunner.de/en/tlp/tlp.html): power manager
+   - [lm-sensors](lm-sensors.org): tools and drivers to monitor hardware
+   - [thermald](https://github.com/01org/thermal_daemon): control cpu's temperature
+   - [mbpfan](https://github.com/dgraziotin/mbpfan): control fan speed
 
-#### thunderbird: email client
-
-#### [weechat](https://weechat.org/): irc client
-
-- [buffers.pl](https://weechat.org/scripts/source/buffers.pl.html/): sidebar with list of buffers
-- [colorize_nicks.py](https://weechat.org/scripts/source/colorize_nicks.py.html/)
-- [tinyurl.py](https://weechat.org/scripts/source/tinyurl.py.html/): get tinyurl.com equivalent for ULRs
-
-### Laptop specific
-
-#### [xf86-input-mtrack](https://github.com/p2rkw/xf86-input-mtrack): trackpad config
-
-#### [netctl](https://github.com/joukewitteveen/netctl): manage network connections (used mostly for wifi)
-
-#### [tlp](http://linrunner.de/en/tlp/tlp.html): power manager
-
-#### [lm-sensors](lm-sensors.org): tools and drivers to monitor hardware
-
-#### [thermald](https://github.com/01org/thermal_daemon): control cpu's temperature
-
-#### [mbpfan](https://github.com/dgraziotin/mbpfan): control fan speed
-
-### Others
+- Others
 
    - **alsa**/**pulseaudio**: sound system
    - **ranger**/**thunar**: file manager
