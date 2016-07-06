@@ -92,9 +92,6 @@ alias .....='cd ../../../..'
 alias ll='ls -l'
 alias la='ls -a'
 
-# Programs
-alias irc='weechat-curses'
-
 # Git
 alias ga='git add'
 alias gaa='git add --all *'
