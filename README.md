@@ -62,10 +62,10 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
 
 - Others
 
-   - [alsa](http://www.alsa-project.org/main/index.php/Main_Page)/[pulseaudio](https://www.freedesktop.org/wiki/Software/PulseAudio/): sound system
-   - [ranger](http://ranger.nongnu.org/)/[thunar](http://docs.xfce.org/xfce/thunar/start): file manager
-   - [sxiv](https://github.com/muennich/sxiv)/[feh](http://feh.finalrewind.org/): image viewer
-   - [vlc](https://www.videolan.org/vlc/)/[smplayer](http://smplayer.sourceforge.net/): video player
+   - [alsa](http://www.alsa-project.org/main/index.php/Main_Page) / [pulseaudio](https://www.freedesktop.org/wiki/Software/PulseAudio/): sound system
+   - [ranger](http://ranger.nongnu.org/) / [thunar](http://docs.xfce.org/xfce/thunar/start): file manager
+   - [sxiv](https://github.com/muennich/sxiv) / [feh](http://feh.finalrewind.org/): image viewer
+   - [vlc](https://www.videolan.org/vlc/) / [smplayer](http://smplayer.sourceforge.net/): video player
    - [zathura](https://pwmt.org/projects/zathura/): pdf viewer
    - [libreoffice](https://www.libreoffice.org/): office suite
    - [keepass](http://keepass.info/): password manager
