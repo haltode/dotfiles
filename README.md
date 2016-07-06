@@ -44,7 +44,7 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
       - [grammalecte](https://addons.mozilla.org/en-US/firefox/addon/grammalecte-fr/): French grammar checker
       - [HTTPS-Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/): enable HTTPS automatically
 
-   - : email client
+   - [thunderbird](https://www.mozilla.org/en-US/thunderbird/): email client
    - [weechat](https://weechat.org/): irc client
 
       - [buffers.pl](https://weechat.org/scripts/source/buffers.pl.html/): sidebar with list of buffers

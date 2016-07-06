@@ -2,7 +2,6 @@
 
 auto-reload yes
 reload-time 120
-show-read-articles no
 show-read-feeds no
 
 # Display
