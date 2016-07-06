@@ -64,6 +64,12 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
 
 #### [tlp](http://linrunner.de/en/tlp/tlp.html): power manager
 
+#### [lm-sensors](lm-sensors.org): tools and drivers to monitor hardware
+
+#### [thermald](https://github.com/01org/thermal_daemon): control cpu's temperature
+
+#### [mbpfan](https://github.com/dgraziotin/mbpfan): control fan speed
+
 ### Others
 
    - **alsa**/**pulseaudio**: sound system
