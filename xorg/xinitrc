@@ -1,4 +1,1 @@
-# usb automounting
-udiskie --tray &
-
 exec i3
