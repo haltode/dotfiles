@@ -5,6 +5,8 @@
 # Udiskie (USB auto-mounting)
 exec --no-startup-id udiskie --tray &
 
+exec --no-startup-id xrandr --output eDP1 --mode 2560x1600 --dpi 192
+
 ####################
 # Custom keybinding
 ####################
@@ -138,7 +140,7 @@ bindsym $mod+r mode "resize"
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 16
+font pango:DejaVu Sans Mono 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
