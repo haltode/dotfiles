@@ -9,6 +9,10 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
 - Graphical environment
 
    - [i3wm](http://i3wm.org/): tiling window manager
+      
+      - [i3-gaps-next](https://github.com/Airblader/i3): i3wm with more features (like gaps)
+      - [yabar](https://github.com/geommer/yabar): status bar
+
    - [lightdm](https://www.freedesktop.org/wiki/Software/LightDM/): display manager
 
       - lightdm-webkit2-greeter
@@ -20,6 +24,7 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
       - [powerline](https://github.com/powerline/fonts)
       - [infinality-bundle](https://wiki.archlinux.org/index.php/Infinality)
       - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+      - [font-awesome](http://fontawesome.io/)
 
 - Console environment
 
