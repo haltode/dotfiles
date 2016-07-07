@@ -1,0 +1,8 @@
+# Randomly choose a wallpaper
+wallpaper_id=$(((RANDOM % 28) + 1))
+feh --bg-scale ~/images/wallpapers/wallpaper$wallpaper_id.jpg
+
+# Load the corresponding theme with it (thanks to themer)
+themer activate wallpaper$wallpaper_id
+
+echo "$wallpaper_id"

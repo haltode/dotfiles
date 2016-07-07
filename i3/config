@@ -14,6 +14,9 @@ exec --no-startup-id compton -b
 # Bar
 exec --no-startup-id yabar
 
+# Wallpaper and theme
+exec --no-startup-id ~/scripts/set_theme
+
 ####################
 # Custom keybinding
 ####################
