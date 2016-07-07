@@ -143,6 +143,33 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+#######
+# Gaps
+#######
+
+gaps inner 20
+gaps outer 20
+
+for_window [class="^.*"] border pixel 2
+
+#########
+# Colors
+#########
+
+set $background   {{ black }}
+set $foreground   {{ white }}
+set $gray         {{ alt_black }}
+set $primary      {{ primary }}
+set $secondary    {{ secondary }}
+set $tertiary     {{ tertiary }}
+set $warning      {{ special }}
+
+# colors                BORDER      BACKGROUND TEXT        INDICATOR
+client.focused          $primary    $primary   $background $primary
+client.focused_inactive $background $primary   $foreground $background
+client.unfocused        $gray       $gray      $background $secondary
+client.urgent           $warning    $warning   $foreground $warning
+
 ##############
 # Environment
 ##############
