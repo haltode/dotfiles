@@ -67,6 +67,8 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
    - [mbpfan](https://github.com/dgraziotin/mbpfan): control fan speed
    - [thermald](https://github.com/01org/thermal_daemon): control cpu's temperature
    - cpupower: control power saving related to the processor
+   - [wiki udev rules](https://wiki.archlinux.org/index.php/MacBookPro11,x#Powersave): udev rules to save power (cardreader and bluetooth)
+   - disabled bluetooth and webcam: `/etc/modprobe.d/50-disabling.conf`
 
 - Others
 
