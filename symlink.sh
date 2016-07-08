@@ -3,6 +3,9 @@ dotfiles=$HOME/dotfiles
 # compton
 ln -s $dotfiles/compton/compton.conf $HOME/.compton.conf
 
+# dunst
+ln -s $dotfiles/dunst $HOME/.config/dunst
+
 # i3
 ln -s $dotfiles/i3/config $dotfiles/themer/templates/i3/i3.tpl
 

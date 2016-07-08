@@ -3,7 +3,7 @@
 ######################
 
 # Udiskie (USB auto-mounting)
-exec --no-startup-id udiskie --tray &
+exec --no-startup-id udiskie --tray
 
 # Display specific config
 exec --no-startup-id xrandr --output eDP1 --mode 2560x1600 --dpi 192
@@ -16,6 +16,9 @@ exec --no-startup-id yabar
 
 # Wallpaper and theme
 exec --no-startup-id ~/scripts/set_theme
+
+# Notification system
+exec --no-startup-id dunst
 
 ####################
 # Custom keybinding

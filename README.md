@@ -20,7 +20,7 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
       - lightdm-webkit2-greeter
       - [lightdm-webkit-theme-material-git](https://github.com/artur9010/lightdm-webkit-material)
 
-   - : notification system
+   - [dunst](http://www.knopwob.org/dunst/): notification system
    - Fonts
 
       - [powerline](https://github.com/powerline/fonts)
@@ -57,6 +57,7 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
       - [buffers.pl](https://weechat.org/scripts/source/buffers.pl.html/): sidebar with list of buffers
       - [colorize_nicks.py](https://weechat.org/scripts/source/colorize_nicks.py.html/)
       - [tinyurl.py](https://weechat.org/scripts/source/tinyurl.py.html/): get tinyurl.com equivalent for ULRs
+      - [notify_send.pl](https://weechat.org/scripts/source/notify_send.pl.html/): send notifications on hl, private message, ...
 
 - Laptop specific
 
