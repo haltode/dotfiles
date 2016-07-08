@@ -1,0 +1,1 @@
+/home/napnac/dotfiles/i3/config

@@ -12,6 +12,7 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
       
       - [i3-gaps-next](https://github.com/Airblader/i3): i3wm with more features (like gaps)
       - [yabar](https://github.com/geommer/yabar): status bar
+      - [themer](https://github.com/s-ol/themer): colorscheme generator and manager
 
    - [lightdm](https://www.freedesktop.org/wiki/Software/LightDM/): display manager
 

@@ -1,0 +1,26 @@
+variables:
+   primary: magenta
+   secondary: green
+   tertiary: red
+   special: yellow
+   transparency: 70
+   fontName: terminus
+   fontSize: 10
+   font: "-*-terminus-*-*-*-*-12-*-*-*-*-*-*-*"
+plugins:
+   parsers:
+      - themer.parsers.SweylaColorParser
+      - themer.parsers.WallhavenColorParser
+      - themer.parsers.KmeansColorParser
+      - themer.parsers.CachedColorParser
+        # - themer.parsers.vim.VimColorParser
+      - themer.ColorParser
+   activators:
+      - themer.activators.wallfix.WallfixActivator
+      - themer.activators.i3.I3Activator
+      # - themer.activators.acyl.ACYLActivator
+      - yabar_rgb_value.yabar_color_fix
+files:
+   index.tpl: index.html
+   i3.tpl: i3.conf
+   yabar.tpl: yabar.conf

@@ -5,4 +5,8 @@ feh --bg-scale ~/images/wallpapers/wallpaper$wallpaper_id.jpg
 # Load the corresponding theme with it (thanks to themer)
 themer activate wallpaper$wallpaper_id
 
+# Reload yabar
+pkill yabar
+yabar&
+
 echo "$wallpaper_id"
