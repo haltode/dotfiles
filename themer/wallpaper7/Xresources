@@ -1,0 +1,74 @@
+! HiDPI screen (Retina)
+Xft.dpi: 192
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+!!!!!!!!!
+! Colors
+!!!!!!!!!
+
+! special
+*.foreground:  #ffffff
+*.background:  #0e0e0e
+
+! black
+*.color0:      #20171b
+*.color8:      #46718a
+
+! red
+*.color1:      #e09186
+*.color9:      #e79aa4
+
+! green
+*.color2:      #e08287
+*.color10:     #bfa5c8
+
+! yellow
+*.color3:      #0c99a0
+*.color11:     #c8819b
+
+! blue
+*.color4:      #117ba0
+*.color12:     #c885ab
+
+! magenta
+*.color5:      #dd7789
+*.color13:     #ac98c8
+
+! cyan
+*.color6:      #d58a99
+*.color14:     #bba5c8
+
+! white
+*.color7:      #407ba0
+*.color15:     #0371c8
+
+!!!!!!!
+! Rofi
+!!!!!!!
+
+! Window opacity
+rofi.opacity:                        100
+! Window width
+rofi.width:                          60
+! Number of lines
+rofi.lines:                          7
+! Number of columns
+rofi.columns:                        1
+! Font to use
+rofi.font:                           Hack 15
+
+
+rofi.color-enabled:                  true
+! Color scheme window
+rofi.color-window: argb:c336343f, argb:0e9dbdb, argb:0ef6155
+! Color scheme for normal row
+rofi.color-normal: argb:0191525,argb:dcffffff, argb:02f1e2e, argb:9a0e1c26, #dd7789
+! Color scheme for active row
+rofi.color-active: argb:02f1e2e, #268bd2, argb:02f1e2e, #268bd2, #fdf6e3
+! Color scheme for urgent row
+rofi.color-urgent: argb:0fdf6e3, #dc322f, argb:0eee8d5, #dc322f, #fdf6e3
