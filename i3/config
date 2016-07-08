@@ -116,11 +116,11 @@ bindsym $mod+Control+9 move container to workspace $w9
 bindsym $mod+Control+0 move container to workspace $w10
 
 # Workspace back and forth (with/without active container)
-bindsym $mod+m workspace back_and_forth
-bindsym $mod+Control+m move container to workspace back_and_forth; workspace back_and_forth
+bindsym $mod+n workspace back_and_forth
+bindsym $mod+Control+n move container to workspace back_and_forth; workspace back_and_forth
 
 # Navigate workspaces next/previous
-bindsym $mod+n workspace next
+bindsym $mod+m workspace next
 bindsym $mod+p workspace prev
 
 ####################
