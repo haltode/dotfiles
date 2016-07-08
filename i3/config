@@ -25,7 +25,7 @@ exec --no-startup-id ~/scripts/set_theme
 bindsym XF86LaunchA exec termite -e "tmuxinator start work"
 
 # Internet layout (firefox, thunderbird, irc)
-bindsym XF86LaunchB exec --no-startup-id "i3-msg 'workspace 2: web_; append_layout /home/napnac/.config/i3/workspace_layout/internet.json'" ; exec firefox ; exec thunderbird ; exec termite -e "weechat"
+bindsym XF86LaunchB layout tabbed ; exec firefox ; exec thunderbird ; exec termite -e "weechat"
 
 # Screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 3%
