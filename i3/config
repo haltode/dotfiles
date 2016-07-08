@@ -24,8 +24,11 @@ exec --no-startup-id ~/scripts/set_theme
 # Work layout (termite with tmux)
 bindsym XF86LaunchA exec termite -e "tmuxinator start work"
 
-# Internet layout (firefox, thunderbird, irc)
-bindsym XF86LaunchB layout tabbed ; exec firefox ; exec thunderbird ; exec termite -e "weechat"
+# Internet layout (firefox, irc)
+bindsym XF86LaunchB layout tabbed ; exec firefox ; exec termite -e "weechat"
+
+# Background program layout (htop, thunderbird)
+bindsym Control+XF86LaunchB exec thunderbird ; exec termite -e "htop"
 
 # Screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 3%
