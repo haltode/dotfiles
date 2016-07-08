@@ -155,3 +155,9 @@ eval $(dircolors ~/.dircolors)
 
 # Z script : https://github.com/rupa/z
 . /bin/z.sh
+
+# Enable termite shortcut: ctrl-shift-t  open terminal in the current directory
+if [[ $TERM == xterm-termite ]]; then
+   . /etc/profile.d/vte.sh
+   __vte_osc7
+fi
