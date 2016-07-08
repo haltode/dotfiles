@@ -24,3 +24,4 @@ files:
    index.tpl: index.html
    i3.tpl: i3.conf
    yabar.tpl: yabar.conf
+   Xresources.tpl: Xresources

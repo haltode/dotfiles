@@ -1,0 +1,1 @@
+/home/napnac/dotfiles/xorg/Xresources
