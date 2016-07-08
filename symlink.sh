@@ -22,7 +22,7 @@ ln -s $HOME/.config/themer/current/yabar.conf $HOME/.config/yabar/yabar.conf
 # tmux
 ln -s $dotfiles/tmux/tmux.conf $HOME/.tmux.conf
 ln -s $dotfiles/tmux/tmuxinator $HOME/.tmuxinator
-# ln -s $dotfiles/tmux/tmux_powerline.json
+ln -s $dotfiles/tmux/tmux_powerline.json $HOME/.config/powerline/themes/tmux/default.json
 
 # vim
 ln -s $dotfiles/vim/vimrc $HOME/.vimrc
