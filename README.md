@@ -14,6 +14,7 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
       - [yabar](https://github.com/geommer/yabar): status bar
       - [rofi](https://github.com/DaveDavenport/rofi): program launcher
       - [themer](https://github.com/s-ol/themer): colorscheme generator and manager
+      - [custom i3lock screen](https://redd.it/3358vu)
 
    - [lightdm](https://www.freedesktop.org/wiki/Software/LightDM/): display manager
 

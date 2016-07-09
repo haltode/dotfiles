@@ -49,6 +49,9 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 # Start rofi (a program launcher)
 bindsym $mod+d exec rofi -show run
 
+# Lock computer
+bindsym $mod+Control+e exec ~/scripts/lock_screen
+
 ####################
 # System keybinding
 ####################
@@ -75,8 +78,6 @@ bindsym $mod+Control+l move right
 
 # Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Control+r restart
-# Exit i3 (logs you out of your X session)
-bindsym $mod+Control+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 #######################
 # Workspace keybinding

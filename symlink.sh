@@ -22,7 +22,7 @@ ln -s $dotfiles/termite/dircolors $HOME/.dircolors
 
 # themer
 ln -s $dotfiles/themer $HOME/.config/themer
-ln -s $HOME/.config/themer/current/i3.conf $HOME/.config/i3/conf
+ln -s $HOME/.config/themer/current/i3.conf $HOME/.config/i3/config
 ln -s $HOME/.config/themer/current/Xresources $HOME/.Xresources
 ln -s $HOME/.config/themer/current/yabar.conf $HOME/.config/yabar/yabar.conf
 
