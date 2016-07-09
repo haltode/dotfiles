@@ -120,6 +120,8 @@ alias cfg-yabar='vim ~/dotfiles/yabar/yabar.conf'
 
 # Network
 alias sshpi='ssh pi@192.168.1.28'
+alias ethernet_start='sudo systemctl start dhcpcd@ens9.service'
+alias ethernet_stop='sudo systemctl stop dhcpcd@ens9.service'
 alias wifi_start='sudo netctl start livebox_maison'
 alias wifi_stop='sudo netctl stop livebox_maison'
 
