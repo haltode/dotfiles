@@ -33,6 +33,10 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
       - [numix-gtk-theme](https://github.com/numixproject/numix-gtk-theme)
       - [numix-icon-theme-circle](https://github.com/numixproject/numix-icon-theme-circle)
 
+   - Qt
+
+      - GTK style
+
 - Console environment
 
    - [termite](https://github.com/thestinger/termite): terminal emulator
