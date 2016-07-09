@@ -28,6 +28,11 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
       - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
       - [font-awesome](http://fontawesome.io/)
 
+   - GTK
+
+      - [numix-gtk-theme](https://github.com/numixproject/numix-gtk-theme)
+      - [numix-icon-theme-circle](https://github.com/numixproject/numix-icon-theme-circle)
+
 - Console environment
 
    - [termite](https://github.com/thestinger/termite): terminal emulator
@@ -50,6 +55,7 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
       - [tab groups](https://addons.mozilla.org/en-us/firefox/addon/tab-groups-panorama/): enable panorama feature (disabled since Firefox 45)
       - [grammalecte](https://addons.mozilla.org/en-US/firefox/addon/grammalecte-fr/): French grammar checker
       - [HTTPS-Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/): enable HTTPS automatically
+      - [arc theme](https://github.com/horst3180/arc-firefox-theme)
 
    - [thunderbird](https://www.mozilla.org/en-US/thunderbird/): email client
    - [weechat](https://weechat.org/): irc client

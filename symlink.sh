@@ -6,6 +6,10 @@ ln -s $dotfiles/compton/compton.conf $HOME/.compton.conf
 # dunst
 ln -s $dotfiles/dunst $HOME/.config/dunst
 
+# gtk
+ln -s $dotfiles/gtk/gtk-2.0 $HOME/.gtkrc-2.0
+ln -s $dotfiles/gtk/gtk-3.0 $HOME/.config/gtk-3.0/settings.ini
+
 # i3
 ln -s $dotfiles/i3/config $dotfiles/themer/templates/i3/i3.tpl
 
