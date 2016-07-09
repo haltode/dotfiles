@@ -45,7 +45,7 @@ let g:vim_markdown_folding_disabled=1
 let g:pencil#wrapModeDefault = 'soft'
 
 " Grammatical correction
-let g:languagetool_jar='~/.vim/bundle/LanguageTool/software/LanguageTool-3.1/languagetool-commandline.jar'
+let g:languagetool_jar='~/.vim/bundle/LanguageTool/software/LanguageTool-3.4/languagetool-commandline.jar'
 
 " Redrew only when we need to
 set lazyredraw

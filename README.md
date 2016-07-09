@@ -48,6 +48,24 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
       - [z script](https://github.com/rupa/z): easy way to go to most frequent directories
 
    - [vim](http://www.vim.org/): text editor
+
+      - [tex-pdf](https://github.com/vim-scripts/TeX-PDF): tex-to-pdf
+      - [language tool](https://github.com/vim-scripts/LanguageTool): grammar checker
+      - [ctrlp](https://github.com/ctrlpvim/ctrlp.vim): fuzzy file/buffer/tag/... finder
+      - [delimite mate](https://github.com/Raimondi/delimitMate): auto-completion for quotes, parens, brackets, ...
+      - [gundo](https://github.com/sjl/gundo.vim): undo tree visualizer
+      - [nerdtree](https://github.com/scrooloose/nerdtree): tree explorer
+      - [supertab](https://github.com/ervandew/supertab): use of tab for completion
+      - [syntastic](https://github.com/scrooloose/syntastic): syntax checking
+      - [tabular](https://github.com/godlygeek/tabular): text alignment
+      - [tagbar](https://github.com/majutsushi/tagbar): displays tags
+      - [ultisnips](https://github.com/SirVer/ultisnips): snippet manager
+      - [vim-commentary](https://github.com/tpope/vim-commentary): comment code easily
+      - [vim-easymotion](https://github.com/easymotion/vim-easymotion): better vim motion
+      - [vim-instant-markdown](https://github.com/suan/vim-instant-markdown): instant markdown preview
+      - [vim-pencil](https://github.com/reedes/vim-pencil): better way to write articles
+      - [vim-snippets](https://github.com/honza/vim-snippets): multiple snippets in different languages
+
    - [tmux](https://tmux.github.io/): terminal multiplexer
 
       - [tmuxinator](https://github.com/tmuxinator/tmuxinator): manage tmux sessions
