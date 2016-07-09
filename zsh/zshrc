@@ -111,8 +111,10 @@ alias cfg-x='vim ~/dotfiles/xorg/xinitrc'
 alias cfg-tmux='vim ~/dotfiles/tmux/tmux.conf'
 alias cfg-yabar='vim ~/dotfiles/yabar/yabar.conf'
 
-# SSH
+# Network
 alias sshpi='ssh pi@192.168.1.28'
+alias wifi_start='sudo netctl start livebox_maison'
+alias wifi_stop='sudo netctl stop livebox_maison'
 
 # -----------------------------------------------------------------------------
 # Function 
