@@ -4,6 +4,22 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
 
 ## Screenshots
 
+![Clean](/img/clean.png)
+
+![Rofi](/img/rofi.png)
+
+![Fake busy](/img/fake_busy.png)
+
+![Lock](/img/lock.png)
+
+This setup is based on a flexible theme customization, and each time I log in, I have a random theme loaded (I currently have ~30 themes, all generated with [themer](https://github.com/s-ol/themer)). Here are some exemples of other themes :
+
+![Other theme](/img/other_theme.png)
+
+![Other theme](/img/other_theme2.png)
+
+![Other theme](/img/other_theme3.png)
+
 ## Software
 
 - Graphical environment
