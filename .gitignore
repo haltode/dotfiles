@@ -1,2 +1,5 @@
 themer/templates/i3/plugins/__init__.py
 themer/templates/i3/plugins/__pycache__/*
+themer/current
+
+vim/vim/.netrwhist

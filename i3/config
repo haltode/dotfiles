@@ -196,8 +196,8 @@ set $transparent #00000000
 
 # colors                BORDER      BACKGROUND TEXT        INDICATOR
 client.focused          $primary    $primary   $background $primary
-client.focused_inactive $background $primary   $foreground $background
-client.unfocused        $gray       $gray      $background $secondary
+client.focused_inactive $secondary  $secondary $background $secondary
+client.unfocused        $secondary  $secondary $background $secondary
 client.urgent           $warning    $warning   $foreground $warning
 
 ##############
