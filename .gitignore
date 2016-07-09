@@ -2,4 +2,9 @@ themer/templates/i3/plugins/__init__.py
 themer/templates/i3/plugins/__pycache__/*
 themer/current
 
+themer/wallpaper*/i3.conf
+themer/wallpaper*/index.html
+themer/wallpaper*/Xresources
+themer/wallpaper*/yabar.conf
+
 vim/vim/.netrwhist
