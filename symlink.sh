@@ -31,6 +31,9 @@ ln -s $dotfiles/tmux/tmux_powerline.json $HOME/.config/powerline/themes/tmux/def
 ln -s $dotfiles/vim/vimrc $HOME/.vimrc
 ln -s $dotfiles/vim/vim $HOME/.vim
 
+# xfluxd
+ln -s $dotfiles/xfluxd/xfluxd.conf /etc/xfluxd.conf
+
 # xorg
 ln -s $dotfiles/xorg/xinitrc $HOME/.xinitrc
 ln -s $dotfiles/xorg/Xmodmap $HOME/.Xmodmap

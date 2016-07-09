@@ -82,7 +82,7 @@ These are my personnal dotfiles for my laptop which is running on [Arch Linux](h
    - [keepass](http://keepass.info/): password manager
    - [transmission](https://www.transmissionbt.com/): bittorent client
    - [udiskie](https://www.freedesktop.org/wiki/Software/udisks/): automatic disk mounting
-   - [f.lux](https://justgetflux.com/): adjust the color temperature of the screen
+   - [xfluxd](https://justgetflux.com/): adjust the color temperature of the screen
 
 ## Hardware
 
