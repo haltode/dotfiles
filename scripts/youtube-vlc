@@ -1,0 +1,11 @@
+# Get the last links
+links=`grep "il y a " ~/telechargements/Abonnements\ -\ YouTube.htm | \
+grep -o '<a href=['"'"'"][^"'"'"']*['"'"'"]' | \
+sed -e 's/^<a href=["'"'"']/https:\/\/www.youtube.com/' -e 's/["'"'"']$//' | \
+grep watch -m $1 | tr '\n' ' '`
+
+# Use vlc to start the playlist
+vlc --fullscreen $links
+
+# Remove old links
+rm ~/telechargements/Abonnements\ -\ YouTube.htm
