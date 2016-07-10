@@ -108,10 +108,10 @@ This setup is based on a flexible theme customization, and each time I log in, I
 
    - [xf86-input-mtrack](https://github.com/p2rkw/xf86-input-mtrack): trackpad config
    - [netctl](https://github.com/joukewitteveen/netctl): manage network connections (used mostly for wifi)
-   - [tlp](http://linrunner.de/en/tlp/tlp.html): power manager
-   - powertop: another power manager
    - [lm-sensors](lm-sensors.org): tools and drivers to monitor hardware
-   - [mbpfan](https://github.com/dgraziotin/mbpfan): control fan speed
+   - [i7z](https://github.com/ajaiantilal/i7z): cpu monitor tool
+   - [tlp](http://linrunner.de/en/tlp/tlp.html) / powertop: power manager
+   - [mbpfan](https://github.com/dgraziotin/mbpfan) / [macfanctld](https://github.com/MikaelStrom/macfanctld): control fan speed
    - [thermald](https://github.com/01org/thermal_daemon): control cpu's temperature
    - cpupower: control power saving related to the processor
    - [archlinux wiki: power management](https://wiki.archlinux.org/index.php/Power_management)
