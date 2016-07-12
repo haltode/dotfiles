@@ -67,12 +67,12 @@ set t_Co=256
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
 set expandtab
-
 set smarttab
 
+" File type specific options overwrite these parameters (see .vim/after/ftplugin)
 " 1 tab = 3 spaces
 set shiftwidth=3
-set tabstop=3
+set softtabstop=3
 
 set autoindent
 set smartindent
