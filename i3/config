@@ -34,8 +34,8 @@ bindsym XF86LaunchB layout tabbed ; exec firefox ; exec termite -e "weechat"
 bindsym Control+XF86LaunchB exec thunderbird ; exec termite -e "htop"
 
 # Screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 3%
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 3%
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1%
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 1%
 
 # Keyboard backlight
 bindsym XF86KbdBrightnessDown exec --no-startup-id kbdlight down 11
