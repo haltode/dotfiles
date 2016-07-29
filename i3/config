@@ -24,15 +24,6 @@ exec --no-startup-id dunst
 # Custom keybinding
 ####################
 
-# Work layout (termite with tmux)
-bindsym XF86LaunchA exec termite -e "tmuxinator start work"
-
-# Internet layout (firefox, irc)
-bindsym XF86LaunchB layout tabbed ; exec firefox ; exec termite -e "weechat"
-
-# Background program layout (htop, thunderbird)
-bindsym Control+XF86LaunchB exec thunderbird ; exec termite -e "htop"
-
 # Screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1%
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 1%
@@ -60,6 +51,9 @@ set $mod Mod4
 
 # Start a terminal
 bindsym $mod+Return exec termite
+
+# Start a floating terminal
+bindsym $mod+Control+Return exec termite --role floating_terminal
 
 # Kill focused window
 bindsym $mod+c kill
@@ -217,3 +211,6 @@ floating_modifier $mod
 
 # Disable "focus follows mouse" mode
 focus_follows_mouse no
+
+# Floating terminal
+for_window [window_role=floating_terminal] floating enable
