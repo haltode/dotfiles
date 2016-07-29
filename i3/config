@@ -117,9 +117,9 @@ bindsym $mod+Control+0 move container to workspace $w10
 bindsym $mod+n workspace back_and_forth
 bindsym $mod+Control+n move container to workspace back_and_forth; workspace back_and_forth
 
-# Navigate workspaces next/previous
-bindsym $mod+m workspace next
-bindsym $mod+p workspace prev
+# Navigate workspaces
+bindsym $mod+o workspace prev
+bindsym $mod+p workspace next
 
 ####################
 # Layout keybinding
