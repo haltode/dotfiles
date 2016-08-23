@@ -11,7 +11,7 @@
 # you can add -- at the end to indicate end of options
 # (if your program supports it, most do)
 program='/usr/bin/transmission-remote -a'
-TPB="https://thepiratebay.la"
+TPB="https://thepiratebay.org/"
 
 # show N first matches by default
 limit=25
@@ -77,7 +77,8 @@ done
 shift `expr $OPTIND - 1`
 
 # correctly encode query
-q=`echo "$*" | tr -d '\n' | od -t x1 -A n | tr ' ' '%'`
+#q=`echo "$*" | tr -d '\n' | od -t x1 -A n | tr ' ' '%'`
+q=`echo "$*" | tr -d '\n'`
 
 # if not searching, show top torrents
 if [ -z "$q" ] ; then
