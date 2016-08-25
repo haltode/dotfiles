@@ -20,59 +20,6 @@ exec --no-startup-id ~/scripts/set_theme
 # Notification system
 exec --no-startup-id dunst
 
-####################
-# Custom keybinding
-####################
-
-# Screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1%
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 1%
-
-# Keyboard backlight
-bindsym XF86KbdBrightnessDown exec --no-startup-id kbdlight down 11
-bindsym XF86KbdBrightnessUp exec --no-startup-id kbdlight up 11
-
-# Sound control
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 3%+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 3%- unmute
-bindsym XF86AudioMute exec amixer -q set Master toggle
-
-# Start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run
-
-# Lock computer
-bindsym $mod+Control+e exec ~/scripts/lock_screen
-
-####################
-# System keybinding
-####################
-
-set $mod Mod4
-
-# Start a terminal
-bindsym $mod+Return exec termite
-
-# Start a floating terminal
-bindsym $mod+Control+Return exec termite --role floating_terminal
-
-# Kill focused window
-bindsym $mod+c kill
-
-# Change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
-
-# Move focused window
-bindsym $mod+Control+h move left
-bindsym $mod+Control+j move down
-bindsym $mod+Control+k move up
-bindsym $mod+Control+l move right
-
-# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Control+r restart
-
 #######################
 # Workspace keybinding
 #######################
@@ -120,6 +67,65 @@ bindsym $mod+Control+n move container to workspace back_and_forth; workspace bac
 # Navigate workspaces
 bindsym $mod+o workspace prev
 bindsym $mod+p workspace next
+
+####################
+# Custom keybinding
+####################
+
+# Screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1%
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 1%
+
+# Keyboard backlight
+bindsym XF86KbdBrightnessDown exec --no-startup-id kbdlight down 11
+bindsym XF86KbdBrightnessUp exec --no-startup-id kbdlight up 11
+
+# Sound control
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 3%+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 3%- unmute
+bindsym XF86AudioMute exec amixer -q set Master toggle
+
+# Start playing youtube video in vlc (from the url in the clipboard)
+bindsym XF86LaunchA workspace $w3 ; exec vlc --fullscreen `xsel`
+
+# Start youtube subscription's playlist
+bindsym Control+XF86LaunchA workspace $w3 ; exec ~/scripts/youtube-vlc 20
+
+# Start rofi (a program launcher)
+bindsym $mod+d exec rofi -show run
+
+# Lock computer
+bindsym $mod+Control+e exec ~/scripts/lock_screen
+
+####################
+# System keybinding
+####################
+
+set $mod Mod4
+
+# Start a terminal
+bindsym $mod+Return exec termite
+
+# Start a floating terminal
+bindsym $mod+Control+Return exec termite --role floating_terminal
+
+# Kill focused window
+bindsym $mod+c kill
+
+# Change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# Move focused window
+bindsym $mod+Control+h move left
+bindsym $mod+Control+j move down
+bindsym $mod+Control+k move up
+bindsym $mod+Control+l move right
+
+# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Control+r restart
 
 ####################
 # Layout keybinding

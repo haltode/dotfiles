@@ -99,6 +99,13 @@ alias .....='cd ../../../..'
 alias ll='ls -l'
 alias la='ls -a'
 
+# Editing files
+alias e='vim'
+alias se='sudoedit'
+
+# Removing directories
+alias rmr='rm -r'
+
 # Git
 alias ga='git add'
 alias gaa='git add --all *'
@@ -118,14 +125,18 @@ alias cfg-x='vim ~/dotfiles/xorg/xinitrc'
 alias cfg-tmux='vim ~/dotfiles/tmux/tmux.conf'
 alias cfg-yabar='vim ~/dotfiles/yabar/yabar.conf'
 
+# System
+alias update='yaourt -Suy'
+
 # Network
 alias sshpi='ssh pi@192.168.1.28'
-alias ethernet_start='sudo systemctl start dhcpcd@ens9.service'
-alias ethernet_stop='sudo systemctl stop dhcpcd@ens9.service'
-alias wifi_start='sudo netctl start livebox_maison'
-alias wifi_stop='sudo netctl stop livebox_maison'
-alias iphone_start='sudo ifuse ~/iphone ; sudo systemctl start dhcpcd@enp0s20u1c4i2'
-alias iphone_stop='sudo fusermount -u ~/iphone ; sudo systemctl stop dhcpcd@enp0s20u1c4i2'
+alias irc='weechat'
+alias eu='sudo systemctl start dhcpcd@ens9.service'
+alias ed='sudo systemctl stop dhcpcd@ens9.service'
+alias wu='sudo netctl start livebox_maison'
+alias wd='sudo netctl stop livebox_maison'
+alias iphone_up='sudo ifuse ~/iphone ; sudo systemctl start dhcpcd@enp0s20u1c4i2'
+alias iphone_down='sudo fusermount -u ~/iphone ; sudo systemctl stop dhcpcd@enp0s20u1c4i2'
 
 # -----------------------------------------------------------------------------
 # Function 
