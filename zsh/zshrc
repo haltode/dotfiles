@@ -33,6 +33,9 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 export PATH=$PATH:$HOME/dotfiles/scripts
 export PATH=$PATH:$HOME/scripts
 
+# Cross-compiler
+export PATH=$PATH:$HOME/projets/yaos/cross-compiler/bin
+
 # Node.js/npm
 PATH="$HOME/.node_modules/bin:$PATH"
 export npm_config_prefix=~/.node_modules
@@ -115,6 +118,10 @@ alias gpush='git push -u origin master'
 alias gst='git status'
 # Fancy diff for git : https://github.com/stevemao/diff-so-fancy
 alias gdif='git diff --color | diff-so-fancy | less'
+
+# Makefile
+alias m='make'
+alias mc='make clean'
 
 # Config file
 alias cfg-i3='vim ~/dotfiles/i3/config'
