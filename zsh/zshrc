@@ -122,6 +122,8 @@ alias gdif='git diff --color | diff-so-fancy | less'
 # Makefile
 alias m='make'
 alias mc='make clean'
+alias mr='make run'
+alias mi='make install'
 
 # Config file
 alias cfg-i3='vim ~/dotfiles/i3/config'
