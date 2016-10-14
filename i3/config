@@ -88,6 +88,9 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 # Start playing youtube video in vlc (from the url in the clipboard)
 bindsym XF86LaunchA workspace $w3 ; exec vlc --fullscreen `xsel`
 
+# Start playing youtube video in mplayer (as an alternative)
+bindsym Shift+XF86LaunchA workspace $w3 ; exec youtube-dl -q -o- `xsel` | mplayer -fs -cache 8192  -
+
 # Start youtube subscription's playlist
 bindsym Control+XF86LaunchA workspace $w3 ; exec ~/scripts/youtube-vlc 20
 
