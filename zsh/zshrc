@@ -92,6 +92,9 @@ source ~/dotfiles/tmux/tmuxinator.zsh
 # Alias 
 # -----------------------------------------------------------------------------
 
+# Enables aliases with sudo command
+alias sudo='sudo '
+
 # Directory movement
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -107,7 +110,7 @@ alias e='vim'
 alias se='sudoedit'
 
 # Removing directories
-alias rmr='rm -r'
+alias rmr='rmdir'
 
 # Git
 alias ga='git add'
