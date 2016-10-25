@@ -110,7 +110,7 @@ alias e='vim'
 alias se='sudoedit'
 
 # Removing directories
-alias rmr='rmdir'
+alias rmr='rm -r'
 
 # Git
 alias ga='git add'
