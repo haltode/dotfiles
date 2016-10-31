@@ -72,6 +72,9 @@ bindsym $mod+p workspace next
 # Custom keybinding
 ####################
 
+# Internet layout (firefox, thunderbird, weechat)
+bindsym XF86LaunchB workspace $w2 ; layout tabbed ; exec firefox ; exec thunderbird ; exec termite -e "weechat"
+
 # Screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1%
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 1%
