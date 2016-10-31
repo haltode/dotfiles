@@ -115,6 +115,7 @@ This setup is based on a flexible theme customization, and each time I log in, I
    - [thermald](https://github.com/01org/thermal_daemon): control cpu's temperature
    - cpupower: control power saving related to the processor
    - [archlinux wiki: power management](https://wiki.archlinux.org/index.php/Power_management)
+   - [archlinux wiki: suspend and hibernate](https://wiki.archlinux.org/index.php/MacBook#Suspend_and_Hibernate)
 
 - Others
 
