@@ -91,9 +91,11 @@ This setup is based on a flexible theme customization, and each time I log in, I
 
    - [firefox](https://www.mozilla.org/en-US/firefox/desktop/): web brower
 
+      - [uBlock Origin](https://addons.mozilla.org/en-us/firefox/addon/ublock-origin/): efficient blocker
       - [tab groups](https://addons.mozilla.org/en-us/firefox/addon/tab-groups-panorama/): enable panorama feature (disabled since Firefox 45)
-      - [grammalecte](https://addons.mozilla.org/en-US/firefox/addon/grammalecte-fr/): French grammar checker
       - [HTTPS-Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/): enable HTTPS automatically
+      - [Decentraleyes](https://addons.mozilla.org/en-us/firefox/addon/decentraleyes/): protect against tracking content delivery
+      - [grammalecte](https://addons.mozilla.org/en-US/firefox/addon/grammalecte-fr/): French grammar checker
       - [arc theme](https://github.com/horst3180/arc-firefox-theme)
 
    - [thunderbird](https://www.mozilla.org/en-US/thunderbird/): email client
