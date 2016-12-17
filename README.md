@@ -130,7 +130,7 @@ This setup is based on a flexible theme customization, and each time I log in, I
    - [keepass](http://keepass.info/): password manager
    - [transmission](https://www.transmissionbt.com/): bittorent client
    - [udiskie](https://www.freedesktop.org/wiki/Software/udisks/): automatic disk mounting
-   - [xfluxd](https://justgetflux.com/): adjust the color temperature of the screen
+   - [redshift](http://jonls.dk/redshift/): adjust the color temperature of the screen
 
 ## Hardware
 
