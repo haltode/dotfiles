@@ -67,13 +67,23 @@ bindsym $mod+Control+0 move container to workspace $w10
 bindsym $mod+n workspace back_and_forth
 bindsym $mod+Control+n move container to workspace back_and_forth; workspace back_and_forth
 
-# Navigate workspaces
-bindsym $mod+o workspace prev
-bindsym $mod+p workspace next
-
 ####################
 # Custom keybinding
 ####################
+
+# Custom launcher mode
+set $launcher Launch: [f]irefox [t]hunderbird [r]anger
+bindsym $mod+o mode "$launcher"
+
+mode "$launcher" {
+   bindsym f exec firefox ; mode "default"
+   bindsym t exec thunderbird ; mode "default"
+   bindsym r exec termite -e "ranger" ; mode "default"
+
+   # Back to normal: Enter or Escape
+   bindsym Return mode "default"
+   bindsym Escape mode "default"
+}
 
 # Internet layout (firefox, thunderbird, weechat)
 bindsym XF86LaunchB workspace $w2 ; layout tabbed ; exec firefox ; exec thunderbird ; exec termite -e "weechat"
