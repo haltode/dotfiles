@@ -85,8 +85,6 @@ This setup is based on a flexible theme customization, and each time I log in, I
 
    - [tmux](https://tmux.github.io/): terminal multiplexer
 
-      - [tmuxinator](https://github.com/tmuxinator/tmuxinator): manage tmux sessions
-
 - Internet
 
    - [firefox](https://www.mozilla.org/en-US/firefox/desktop/): web brower
