@@ -47,8 +47,7 @@ This setup is based on a flexible theme customization, and each time I log in, I
 
    - GTK
 
-      - [numix-gtk-theme](https://github.com/numixproject/numix-gtk-theme)
-      - [numix-icon-theme-circle](https://github.com/numixproject/numix-icon-theme-circle)
+      - [paper](https://snwh.org/paper)
 
    - Qt
 

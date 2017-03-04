@@ -92,6 +92,10 @@ bindsym XF86LaunchB workspace $w2 ; layout tabbed ; exec firefox ; exec thunderb
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1%
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 1%
 
+# Redshift control
+bindsym Control+XF86MonBrightnessDown exec --no-startup-id redshift
+bindsym Control+XF86MonBrightnessUp exec --no-startup-id pkill redshift
+
 # Keyboard backlight
 bindsym XF86KbdBrightnessDown exec --no-startup-id kbdlight down 11
 bindsym XF86KbdBrightnessUp exec --no-startup-id kbdlight up 11
@@ -101,17 +105,17 @@ bindsym XF86AudioRaiseVolume exec amixer -q set Master 3%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 3%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
-# Start playing youtube video in vlc (from the url in the clipboard)
-bindsym XF86LaunchA workspace $w3 ; exec vlc --fullscreen `xsel`
-
-# Start playing youtube video in mplayer (as an alternative)
-bindsym Shift+XF86LaunchA workspace $w3 ; exec youtube-dl -q -o- `xsel` | mplayer -fs -cache 8192  -
+# Start playing youtube video in mplayer
+bindsym XF86LaunchA workspace $w3 ; exec youtube-dl -q -o- `xsel` | mplayer -fs -cache 8192  -
 
 # Start youtube subscription's playlist
 bindsym Control+XF86LaunchA workspace $w3 ; exec ~/scripts/youtube-vlc 20
 
 # Start rofi (a program launcher)
 bindsym $mod+d exec rofi -show run
+
+# Start rofi locate (to search files and folders)
+bindsym Control+$mod+d exec xdg-open "$(locate home | rofi -dmenu -i -p "locate:")"
 
 # Lock computer
 bindsym $mod+Control+e exec ~/scripts/lock_screen
