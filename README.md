@@ -106,6 +106,7 @@ This setup is based on a flexible theme customization, and each time I log in, I
 - Laptop specific
 
    - [xf86-input-mtrack](https://github.com/p2rkw/xf86-input-mtrack): trackpad config
+   - [libinput-gestures](https://github.com/bulletmark/libinput-gestures) : touchpad actions gestures
    - [netctl](https://github.com/joukewitteveen/netctl): manage network connections (used mostly for wifi)
    - [lm-sensors](lm-sensors.org): tools and drivers to monitor hardware
    - [i7z](https://github.com/ajaiantilal/i7z): cpu monitor tool

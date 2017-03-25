@@ -6,6 +6,9 @@ ln -s $dotfiles/compton/compton.conf $HOME/.compton.conf
 # dunst
 ln -s $dotfiles/dunst $HOME/.config/dunst
 
+# gestures
+ln -s $dotfiles/gestures/libinput-gestures.conf $HOME/.config/libinput-gestures.conf
+
 # gtk
 ln -s $dotfiles/gtk/gtk-2.0 $HOME/.gtkrc-2.0
 ln -s $dotfiles/gtk/gtk-3.0 $HOME/.config/gtk-3.0/settings.ini

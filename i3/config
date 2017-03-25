@@ -8,6 +8,9 @@ exec --no-startup-id udiskie --tray
 # Display specific config
 exec --no-startup-id xrandr --output eDP1 --mode 2560x1600 --dpi 192
 
+# Mouse gestures
+exec --no-startup-id libinput-gestures-setup start
+
 # Composite manager (used for transparency)
 exec --no-startup-id compton -b
 
