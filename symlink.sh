@@ -19,6 +19,9 @@ ln -s $dotfiles/i3/config $dotfiles/themer/templates/i3/i3.tpl
 # scripts
 ln -s $dotfiles/scripts $HOME/scripts
 
+# systemd
+ln -s $dotfiles/systemd/journald.conf /etc/systemd/journald.conf
+
 # termite
 ln -s $dotfiles/termite/config $HOME/.config/termite/config
 ln -s $dotfiles/termite/dircolors $HOME/.dircolors
