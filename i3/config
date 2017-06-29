@@ -108,11 +108,11 @@ bindsym XF86AudioRaiseVolume exec amixer -q set Master 3%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 3%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
-# Start playing youtube video in mplayer
-bindsym XF86LaunchA workspace $w3 ; exec youtube-dl -q -o- `xsel` | mplayer -fs -cache 8192  -
+# Start playing youtube video in mpv
+bindsym XF86LaunchA workspace $w3 ; exec mpv --fullscreen `xsel`
 
 # Start youtube subscription's playlist
-bindsym Control+XF86LaunchA workspace $w3 ; exec ~/scripts/youtube-vlc 20
+bindsym Control+XF86LaunchA workspace $w3 ; exec ~/scripts/youtube-mpv 20
 
 # Start rofi (a program launcher)
 bindsym $mod+d exec rofi -show run
