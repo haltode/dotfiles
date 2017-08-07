@@ -3,68 +3,56 @@
 ######################
 
 # Udiskie (USB auto-mounting)
-exec --no-startup-id udiskie --tray
+#exec --no-startup-id udiskie --tray
 
 # Display specific config
-exec --no-startup-id xrandr --output eDP1 --mode 2560x1600 --dpi 192
+#exec --no-startup-id xrandr --output eDP1 --mode 2560x1600 --dpi 192
 
 # Mouse gestures
-exec --no-startup-id libinput-gestures-setup start
+#exec --no-startup-id libinput-gestures-setup start
 
 # Composite manager (used for transparency)
-exec --no-startup-id compton -b
+#exec --no-startup-id compton -b
 
 # Bar
-exec --no-startup-id yabar
+#exec --no-startup-id yabar
 
 # Redshift
 exec --no-startup-id redshift
 
 # Wallpaper and theme
-exec --no-startup-id ~/scripts/set_theme
+#exec --no-startup-id ~/scripts/set_theme
 
 # Notification system
-exec --no-startup-id dunst
+#exec --no-startup-id dunst
 
 #######################
 # Workspace keybinding
 #######################
 
-# Custom name
-set $w1 "1: dev_"
-set $w2 "2: web_"
-set $w3 "3: misc_"
-set $w4 "4: movie_"
-set $w5 "5:"
-set $w6 "6:"
-set $w7 "7:"
-set $w8 "8:"
-set $w9 "9:"
-set $w10 "10:"
-
 # Switch to workspace
-bindsym $mod+1 workspace $w1
-bindsym $mod+2 workspace $w2
-bindsym $mod+3 workspace $w3
-bindsym $mod+4 workspace $w4
-bindsym $mod+5 workspace $w5
-bindsym $mod+6 workspace $w6
-bindsym $mod+7 workspace $w7
-bindsym $mod+8 workspace $w8
-bindsym $mod+9 workspace $w9
-bindsym $mod+0 workspace $w10
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
 
 # Move focused container to workspace
-bindsym $mod+Control+1 move container to workspace $w1
-bindsym $mod+Control+2 move container to workspace $w2
-bindsym $mod+Control+3 move container to workspace $w3
-bindsym $mod+Control+4 move container to workspace $w4
-bindsym $mod+Control+5 move container to workspace $w5
-bindsym $mod+Control+6 move container to workspace $w6
-bindsym $mod+Control+7 move container to workspace $w7
-bindsym $mod+Control+8 move container to workspace $w8
-bindsym $mod+Control+9 move container to workspace $w9
-bindsym $mod+Control+0 move container to workspace $w10
+bindsym $mod+Control+1 move container to workspace 1
+bindsym $mod+Control+2 move container to workspace 2
+bindsym $mod+Control+3 move container to workspace 3
+bindsym $mod+Control+4 move container to workspace 4
+bindsym $mod+Control+5 move container to workspace 5
+bindsym $mod+Control+6 move container to workspace 6
+bindsym $mod+Control+7 move container to workspace 7
+bindsym $mod+Control+8 move container to workspace 8
+bindsym $mod+Control+9 move container to workspace 9
+bindsym $mod+Control+0 move container to workspace 10
 
 # Workspace back and forth (with/without active container)
 bindsym $mod+n workspace back_and_forth
@@ -73,23 +61,6 @@ bindsym $mod+Control+n move container to workspace back_and_forth; workspace bac
 ####################
 # Custom keybinding
 ####################
-
-# Custom launcher mode
-set $launcher Launch: [f]irefox [t]hunderbird [r]anger
-bindsym $mod+o mode "$launcher"
-
-mode "$launcher" {
-   bindsym f exec firefox ; mode "default"
-   bindsym t exec thunderbird ; mode "default"
-   bindsym r exec termite -e "ranger" ; mode "default"
-
-   # Back to normal: Enter or Escape
-   bindsym Return mode "default"
-   bindsym Escape mode "default"
-}
-
-# Internet layout (firefox, thunderbird, weechat)
-bindsym XF86LaunchB workspace $w2 ; layout tabbed ; exec firefox ; exec thunderbird ; exec termite -e "weechat"
 
 # Screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1%
@@ -109,19 +80,18 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 3%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # Start playing youtube video in mpv
-bindsym XF86LaunchA workspace $w3 ; exec mpv --fullscreen `xsel`
+bindsym XF86LaunchA workspace 3 ; exec mpv --fullscreen `xsel`
 
-# Start youtube subscription's playlist
-bindsym Control+XF86LaunchA workspace $w3 ; exec ~/scripts/youtube-mpv 20
-
+# Start dmenu (a program launcher)
+bindsym $mod+d exec dmenu_run
 # Start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run
+#bindsym $mod+d exec rofi -show run
 
 # Start rofi locate (to search files and folders)
-bindsym Control+$mod+d exec xdg-open "$(locate home | rofi -dmenu -i -p "locate:")"
+#bindsym Control+$mod+d exec xdg-open "$(locate home | rofi -dmenu -i -p "locate:")"
 
 # Lock computer
-bindsym $mod+Control+e exec ~/scripts/lock_screen
+#bindsym $mod+Control+e exec ~/scripts/lock_screen
 
 ####################
 # System keybinding
@@ -130,10 +100,10 @@ bindsym $mod+Control+e exec ~/scripts/lock_screen
 set $mod Mod4
 
 # Start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec i3-sensible-terminal
 
 # Start a floating terminal
-bindsym $mod+Control+Return exec termite --role floating_terminal
+bindsym $mod+Control+Return exec i3-sensible-terminal --role floating_terminal
 
 # Kill focused window
 bindsym $mod+c kill
@@ -152,6 +122,13 @@ bindsym $mod+Control+l move right
 
 # Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Control+r restart
+
+# Exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+###
+# Scratchpad
+###
 
 ####################
 # Layout keybinding
@@ -197,39 +174,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-#######
-# Gaps
-#######
-
-gaps inner 20
-gaps outer 20
-
-# Needed to enable gaps correctly
-for_window [class="^.*"] border pixel 2
-
-#########
-# Colors
-#########
-
-set $background   {{ black }}
-set $foreground   {{ white }}
-set $gray         {{ alt_black }}
-set $primary      {{ primary }}
-set $secondary    {{ secondary }}
-set $tertiary     {{ tertiary }}
-set $warning      {{ special }}
-
-set $transparent #00000000
-
-# class                 border   backgr.  text    indicator  child_border
-client.focused          $primary $primary #ffffff $secondary $primary
-client.focused_inactive #333333  #5f676a  #ffffff #484e50    #5f676a
-client.unfocused        #333333  #222222  #888888 #292d2e    #222222
-client.urgent           #2f343a  #900000  #ffffff #900000    #900000
-client.placeholder      #000000  #0c0c0c  #ffffff #000000    #0c0c0c
-
-client.background       #ffffff
-
 ##############
 # Environment
 ##############
@@ -246,3 +190,10 @@ focus_follows_mouse no
 
 # Floating terminal
 for_window [window_role=floating_terminal] floating enable
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+ bar {
+    status_command i3status
+}
+

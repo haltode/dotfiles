@@ -1,1 +1,0 @@
-/home/napnac/dotfiles/yabar/yabar.conf
