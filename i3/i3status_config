@@ -9,61 +9,64 @@
 general {
         colors = true
         interval = 5
+	separator = ""
 }
 
 order += "wireless _first_"
 order += "ethernet _first_"
-order += "disk /"
+order += "disk /home/haltode/"
 order += "battery all"
 order += "volume master"
 order += "cpu_temperature 0"
+order += "cpu_usage"
 order += "tztime local"
 
 wireless _first_ {
-        format_up = "W: (%quality at %essid)"
-        format_down = "W: down"
+        format_up = "    %quality"
+        format_down = "    down"
 }
 
 ethernet _first_ {
         # if you use %speed, i3status requires root privileges
-        format_up = "E: %ip (%speed)"
-        format_down = "E: down"
+        format_up = "    %speed"
+        format_down = "    down"
+}
+
+disk "/home/haltode/" {
+        format_not_mounted = "    %avail"
 }
 
 battery all {
-        format = "%status: %percentage (%remaining)"
-        format_down = "No battery"
-        status_chr = "CHR"
-        status_bat = "BAT"
-        status_unk = "UNK"
-        status_full = "FULL"
+        format = "%status %percentage (%remaining)"
+        format_down = "    "
+        status_chr = "    "
+        status_bat = "    "
+        status_unk = "    "
+        status_full = "    "
 	path = "/sys/class/power_supply/BAT%d/uevent"
-	low_threshold = 30
+	low_threshold = 25
+	threshold_type = percentage
 	hide_seconds = true
 	integer_battery_capacity= true
 }
 
 volume master {
-        format = "VOL: %volume"
-        format_muted = "VOL: muted (%volume)"
+        format = "    %volume"
+        format_muted = "    muted (%volume)"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
 }
 
 cpu_temperature 0 {
-        format = "T: %degrees °C"
+        format = "    %degrees°C"
         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon?/temp1_input"
 }
 
+cpu_usage {
+	format = "    %usage"
+}
+
 tztime local {
-        format = "%H:%M %d-%m-%Y"
-}
-
-load {
-        format = "%1min"
-}
-
-disk "/" {
-        format = "home: %avail"
+        format = "    %H:%M %a %d-%m-%Y"
 }
