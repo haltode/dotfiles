@@ -1,6 +1,0 @@
-res=`ping google.com -c 1 -q -W 2 -w 2 | grep '1 packets transmitted, 1 received, 0% packet loss' | wc -l`
-echo -n "Internet status: "
-if [ "$res" -eq "1" ]
-then echo ""
-else echo ""
-fi
