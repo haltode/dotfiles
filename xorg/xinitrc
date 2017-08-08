@@ -1,1 +1,21 @@
-exec i3
+# Sourcing xprofile
+#[ -f ~/.xprofile ] && . ~/.xprofile
+#
+# Load Xresources config
+xrdb ~/.Xresources
+
+# Key mapping
+xmodmap ~/.Xmodmap
+
+# Screen brightness
+xbacklight -set 3
+
+# Multiple choices for the session (i3wm by default)
+# eg: startx ~/.xinitrc xfce
+session=${1:-i3}
+case $session in
+    i3|i3wm           ) exec i3;;
+    xfce|xfce4        ) exec startxfce4;;
+    # No known session, try to run it as command
+    *                 ) exec $1;;
+esac

@@ -106,8 +106,8 @@ bindsym $mod+Control+r restart
 # Lock computer
 bindsym $mod+Control+e exec i3lock
 
-# Exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# Quit i3wm
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Quit:' -b 'Logout' 'i3-msg exit' -b 'Reboot' 'systemctl reboot' -b 'Shutdown' 'systemctl poweroff'"
 
 ###
 # Scratchpad
