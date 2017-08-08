@@ -8,7 +8,7 @@ xrdb ~/.Xresources
 xmodmap ~/.Xmodmap
 
 # Screen brightness
-xbacklight -set 3
+xbacklight -set 5
 
 # Multiple choices for the session (i3wm by default)
 # eg: startx ~/.xinitrc xfce

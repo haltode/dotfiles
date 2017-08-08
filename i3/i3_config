@@ -9,7 +9,7 @@ exec --no-startup-id libinput-gestures-setup start
 exec --no-startup-id redshift
 
 # Notification system
-#exec --no-startup-id dunst
+exec --no-startup-id dunst
 
 #######################
 # Workspace keybinding

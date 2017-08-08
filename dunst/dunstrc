@@ -1,5 +1,5 @@
 [global]
-font = Sauce Code Pro, FontAwesome 14
+font = 18
 
 # The format of the message. Possible variables are:
 # %a appname
@@ -34,7 +34,7 @@ ignore_newline = yes
 
 # The geometry of the window
 # geometry [{width}]x{height}][+/-{x}+/-{y}]
-geometry = "0x10-0+33"
+geometry = "0x20-0"
 
 # The transparency of the window. range: [0; 100]
 transparency = 0
