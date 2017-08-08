@@ -2,26 +2,11 @@
 # Auto-start programs
 ######################
 
-# Udiskie (USB auto-mounting)
-#exec --no-startup-id udiskie --tray
-
-# Display specific config
-#exec --no-startup-id xrandr --output eDP1 --mode 2560x1600 --dpi 192
-
 # Mouse gestures
-#exec --no-startup-id libinput-gestures-setup start
-
-# Composite manager (used for transparency)
-#exec --no-startup-id compton -b
-
-# Bar
-#exec --no-startup-id yabar
+exec --no-startup-id libinput-gestures-setup start
 
 # Redshift
 exec --no-startup-id redshift
-
-# Wallpaper and theme
-#exec --no-startup-id ~/scripts/set_theme
 
 # Notification system
 #exec --no-startup-id dunst
@@ -71,8 +56,8 @@ bindsym Control+XF86MonBrightnessDown exec --no-startup-id redshift
 bindsym Control+XF86MonBrightnessUp exec --no-startup-id pkill redshift
 
 # Keyboard backlight
-bindsym XF86KbdBrightnessDown exec --no-startup-id kbdlight down 11
-bindsym XF86KbdBrightnessUp exec --no-startup-id kbdlight up 11
+#bindsym XF86KbdBrightnessDown exec --no-startup-id kbdlight down 11
+#bindsym XF86KbdBrightnessUp exec --no-startup-id kbdlight up 11
 
 # Sound control
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 3%+ unmute
@@ -80,18 +65,7 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 3%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # Start playing youtube video in mpv
-bindsym XF86LaunchA workspace 3 ; exec mpv --fullscreen `xsel`
-
-# Start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
-# Start rofi (a program launcher)
-#bindsym $mod+d exec rofi -show run
-
-# Start rofi locate (to search files and folders)
-#bindsym Control+$mod+d exec xdg-open "$(locate home | rofi -dmenu -i -p "locate:")"
-
-# Lock computer
-#bindsym $mod+Control+e exec ~/scripts/lock_screen
+bindsym XF86LaunchA workspace 3; exec mpv --fullscreen `xsel`
 
 ####################
 # System keybinding
@@ -120,8 +94,17 @@ bindsym $mod+Control+j move down
 bindsym $mod+Control+k move up
 bindsym $mod+Control+l move right
 
+# Start dmenu (a program launcher)
+bindsym $mod+d exec dmenu_run
+
+# Start rofi locate (to search files and folders)
+#bindsym Control+$mod+d exec xdg-open "$(locate home | rofi -dmenu -i -p "locate:")"
+
 # Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Control+r restart
+
+# Lock computer
+bindsym $mod+Control+e exec i3lock
 
 # Exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
