@@ -37,10 +37,10 @@ disk "/home/haltode/" {
 }
 
 battery all {
-        format = "%status %percentage (%remaining)"
+        format = "%status %percentage"
         format_down = "    "
         status_chr = "    "
-        status_bat = "    "
+        status_bat = "    "
         status_unk = "    "
         status_full = "    "
 	path = "/sys/class/power_supply/BAT%d/uevent"
@@ -61,10 +61,13 @@ volume master {
 cpu_temperature 0 {
         format = "    %degrees°C"
         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon?/temp1_input"
+		max_threshold = 80
 }
 
 cpu_usage {
 	format = "    %usage"
+	degraded_threshold = 25
+	max_threshold = 75
 }
 
 tztime local {
