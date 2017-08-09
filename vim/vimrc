@@ -11,9 +11,6 @@ execute pathogen#helptags()
 filetype plugin on
 filetype indent on
 
-" Use powerline for vim
-set rtp+=/usr/lib/python3.5/site-packages/powerline/bindings/vim
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -27,7 +24,7 @@ set number
 set showmatch
 
 " Hide the default mode text (e.g. -- INSERT -- below the statusline)
-set noshowmode 
+" set noshowmode 
 
 " Show the status line
 set laststatus=2
@@ -48,7 +45,7 @@ let g:pencil#wrapModeDefault = 'soft'
 let g:languagetool_jar='~/.vim/bundle/LanguageTool/software/LanguageTool-3.4/languagetool-commandline.jar'
 
 " Redrew only when we need to
-set lazyredraw
+" set lazyredraw
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -56,8 +53,8 @@ set lazyredraw
 syntax on
 set background=dark
 "colorscheme vimbrant
-highlight ColorColumn ctermbg=7
-highlight ColorColumn guibg=Gray
+"highlight ColorColumn ctermbg=7
+"highlight ColorColumn guibg=Gray
 
 " Enable 256 colors in Vim
 set t_Co=256
@@ -65,15 +62,13 @@ set t_Co=256
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use spaces instead of tabs
-set expandtab
-set smarttab
-
 " File type specific options overwrite these parameters (see .vim/after/ftplugin)
-" 1 tab = 3 spaces
-set shiftwidth=3
-set softtabstop=3
+" Use tabs with 4 spaces width
+set noexpandtab
+set shiftwidth=4
+set tabstop=4
 
+" Indentation
 set autoindent
 set smartindent
 set shiftround
