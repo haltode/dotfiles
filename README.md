@@ -133,3 +133,15 @@ This setup is based on a flexible theme customization, and each time I log in, I
 ## Hardware
 
 Macbook Pro 13,3" Retina screen, 2.7GHz dual-core Intel Core i5 processor, 8GB RAM, 256GB SSD.
+
+## Old dotfiles
+
+This is my third setup, you can take a look at some older ones:
+
+- Laptop: [Arch Linux + i3wm](https://github.com/napnac/Dotfiles/tree/56e58522a3dee3ad9a4af06838e18f542c54ecbe) (a lot of work went into this one, a really nice setup)
+
+	![Screenshot of older dotfiles on my laptop](/img/old_dotfiles_laptop.png)
+
+- Desktop: [Arch Linux + i3wm](https://github.com/napnac/Dotfiles/tree/ac489524c4936f88a05ea50b77301294e4151f3e)
+
+	![Screenshot of older dotfiles on my desktop](/img/old_dotfiles_desktop.png)
