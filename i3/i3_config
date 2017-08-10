@@ -11,6 +11,9 @@ exec --no-startup-id redshift
 # Notification system
 exec --no-startup-id dunst
 
+# Network Manager applet
+exec --no-startup-id nm-applet
+
 #######################
 # Workspace keybinding
 #######################
