@@ -21,6 +21,14 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
+# Editing files
+alias e='vim'
+alias se='sudoedit'
+
+# Removing directories
+alias rmr='rm -r'
+alias srmr='sudo rm -r'
+
 # Git
 alias ga='git add'
 alias gaa='git add --all *'
@@ -37,6 +45,15 @@ alias glg='git log --graph --pretty=format:\'%Cred%h%Creset -%C(yellow)%d%Creset
 alias gfl='git log -u'
 alias glc='git log --pretty=format:\'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)<%an>%Creset\' --numstat -1'
 alias gdlc='git diff --cached HEAD^'
+
+# Makefile
+alias m='make'
+alias mc='make clean'
+alias mr='make run'
+alias mi='make install'
+
+# Python
+alias p='python'
 
 # Config file
 alias cfg-i3='vim ~/dotfiles/i3/i3_config'
