@@ -7,7 +7,7 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = Sauce Code Pro Nerd Font 18
+font = Sauce Code Pro Nerd Font 10
 scrollback_lines = 10000
 search_wrap = true
 
@@ -24,38 +24,44 @@ browser = firefox
 filter_unmatched_urls = true
 
 [colors]
-#cursor = #dcdccc
-foreground = #dcdccc
-foreground_bold = #ffffff
-background = #3f3f3f
+# Base16 Eighties
+# Author: Chris Kempson (http://chriskempson.com)
+# https://github.com/khamer/base16-termite
 
-# 20% background transparency (requires a compositor)
-background = rgba(63, 63, 63, 0.8)
+foreground      = #d3d0c8
+foreground_bold = #e8e6df
+cursor          = #e8e6df
+background      = #2d2d2d
 
-# if unset, will reverse foreground and background
-highlight = #2f2f2f
+# 16 color space
 
-# black
-color0 = #3f3f3f
-color8 = #709080
-# red
-color1 = #dd4f4f
-color9 = #dca3a3
-# green
-color2 = #60b48a
-color10 = #c3bf9f
-# yellow
-color3 = #dfaf8f
-color11 = #f0dfaf
-# blue
-color4 = #408fef
-color12 = #94bff3
-# magenta
-color5 = #dc8cc3
-color13 = #ec93d3
-# cyan
-color6 = #8cd0d3
-color14 = #93e0e3
-# white
-color7 = #dcdccc
-color15 = #ffffff
+# Black, Gray, Silver, White
+color0  = #2d2d2d
+color8  = #747369
+color7  = #d3d0c8
+color15 = #f2f0ec
+# Red
+color1  = #f2777a
+color9  = #f2777a
+# Green
+color2  = #99cc99
+color10 = #99cc99
+# Yellow
+color3  = #ffcc66
+color11 = #ffcc66
+# Blue
+color4  = #6699cc
+color12 = #6699cc
+# Purple
+color5  = #cc99cc
+color13 = #cc99cc
+# Teal
+color6  = #66cccc
+color14 = #66cccc
+# Extra colors
+color16 = #f99157
+color17 = #d27b53
+color18 = #393939
+color19 = #515151
+color20 = #a09f93
+color21 = #e8e6df

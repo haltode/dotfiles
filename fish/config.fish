@@ -5,7 +5,7 @@
 set -gx PATH $PATH ~/scripts
 
 set -x EDITOR vim
-set -x TERMINAL xfce4-terminal
+set -x TERMINAL termite
 set -x BROWSER firefox
 set -x PAGER less
 set -x MOVPLAY mpv
@@ -59,6 +59,7 @@ alias p='python'
 alias cfg-i3='vim ~/dotfiles/i3/i3_config'
 alias cfg-vim='vim ~/dotfiles/vim/vimrc'
 alias cfg-fish='vim ~/dotfiles/fish/config.fish'
+alias cfg-termite='vim ~/dotfiles/termite/config'
 
 # -----------------------------------------------------------------------------
 # Function 
