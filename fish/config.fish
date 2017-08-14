@@ -68,7 +68,7 @@ alias cfg-termite='vim ~/dotfiles/termite/config'
 # Transmission cli
 function T
 	~/scripts/blocklist
-	transmission-daemon
+	transmission-daemon -g ~/.config/transmission-daemon
 	sleep 3
 	transmission-remote-cli
 end
