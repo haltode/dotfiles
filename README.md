@@ -1,134 +1,87 @@
 # Dotfiles
 
-These are my personnal dotfiles for my laptop which is running on [Arch Linux](https://www.archlinux.org/) and is using [i3wm](http://i3wm.org/).
+These are my personnal dotfiles for my laptop which is running on [Debian](https://www.debian.org/) Stretch (stable) and is using [i3wm](http://i3wm.org/).
 
 ## Screenshots
 
-![Clean](/img/clean.png)
-
-![Rofi](/img/rofi.png)
-
-![Fake busy](/img/fake_busy.png)
-
-![Lock](/img/lock.png)
-
-This setup is based on a flexible theme customization, and each time I log in, I have a random theme loaded (I currently have ~30 themes, all generated with [themer](https://github.com/s-ol/themer)). Here are some exemples of other themes :
-
-![Other theme](/img/other_theme.png)
-
-![Other theme](/img/other_theme2.png)
-
-![Other theme](/img/other_theme3.png)
+TODO: add screenshots
 
 ## Software
 
 - Graphical environment
 
-   - [i3wm](http://i3wm.org/): tiling window manager
+	- [i3wm](http://i3wm.org/): tiling window manager
       
-      - [i3-gaps-next](https://github.com/Airblader/i3): i3wm with more features (like gaps)
-      - [yabar](https://github.com/geommer/yabar): status bar
-      - [rofi](https://github.com/DaveDavenport/rofi): program launcher
-      - [themer](https://github.com/s-ol/themer): colorscheme generator and manager
-      - [custom i3lock screen](https://redd.it/3358vu)
+		- [dmenu](http://tools.suckless.org/dmenu/): program launcher
+		- [dunst](http://www.knopwob.org/dunst/): notification system
+		- [i3lock](https://i3wm.org/i3lock/) with a custom [i3lock screen](https://redd.it/3358vu)
+		- [i3status](https://i3wm.org/i3status/): status bar
 
-   - [lightdm](https://www.freedesktop.org/wiki/Software/LightDM/): display manager
+	- Fonts
 
-      - lightdm-webkit2-greeter
-      - [lightdm-webkit-theme-material-git](https://github.com/artur9010/lightdm-webkit-material)
+		- [font-awesome](http://fontawesome.io/)
+		- [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 
-   - [dunst](http://www.knopwob.org/dunst/): notification system
-   - Fonts
+	- GTK
 
-      - [powerline](https://github.com/powerline/fonts)
-      - [infinality-bundle](https://wiki.archlinux.org/index.php/Infinality)
-      - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
-      - [font-awesome](http://fontawesome.io/)
-
-   - GTK
-
-      - [paper](https://snwh.org/paper)
-
-   - Qt
-
-      - GTK style
+		- [Numix icon](https://github.com/numixproject/numix-icon-theme)
+		- [Numix](https://github.com/numixproject/numix-gtk-theme)
 
 - Console environment
 
-   - [termite](https://github.com/thestinger/termite): terminal emulator
-   - [zsh](http://www.zsh.org/): command-line shell
+	- [termite](https://github.com/thestinger/termite): terminal emulator
+	- [fish](https://fishshell.com/): command-line shell
 
-      - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh): theme and plugins
-      - [zsh-completions](https://github.com/zsh-users/zsh-completions): additional completion definitions
-      - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting): fish-like syntax highlighting
-      - [z script](https://github.com/rupa/z): easy way to go to most frequent directories
+		- [z script](https://github.com/rupa/z): easy way to go to most frequent directories
 
-   - [vim](http://www.vim.org/): text editor
+	- [vim](http://www.vim.org/): text editor
 
-      - [tex-pdf](https://github.com/vim-scripts/TeX-PDF): tex-to-pdf
-      - [language tool](https://github.com/vim-scripts/LanguageTool): grammar checker
-      - [ctrlp](https://github.com/ctrlpvim/ctrlp.vim): fuzzy file/buffer/tag/... finder
-      - [delimite mate](https://github.com/Raimondi/delimitMate): auto-completion for quotes, parens, brackets, ...
-      - [gundo](https://github.com/sjl/gundo.vim): undo tree visualizer
-      - [nerdtree](https://github.com/scrooloose/nerdtree): tree explorer
-      - [supertab](https://github.com/ervandew/supertab): use of tab for completion
-      - [syntastic](https://github.com/scrooloose/syntastic): syntax checking
-      - [tabular](https://github.com/godlygeek/tabular): text alignment
-      - [tagbar](https://github.com/majutsushi/tagbar): displays tags
-      - [ultisnips](https://github.com/SirVer/ultisnips): snippet manager
-      - [vim-commentary](https://github.com/tpope/vim-commentary): comment code easily
-      - [vim-easymotion](https://github.com/easymotion/vim-easymotion): better vim motion
-      - [vim-instant-markdown](https://github.com/suan/vim-instant-markdown): instant markdown preview
-      - [vim-pencil](https://github.com/reedes/vim-pencil): better way to write articles
-      - [vim-snippets](https://github.com/honza/vim-snippets): multiple snippets in different languages
-
-   - [tmux](https://tmux.github.io/): terminal multiplexer
+		- [ctrlp](https://github.com/ctrlpvim/ctrlp.vim): fuzzy file/buffer/tag/... finder
+		- [delimite mate](https://github.com/Raimondi/delimitMate): auto-completion for quotes, parens, brackets, etc.
+		- [supertab](https://github.com/ervandew/supertab): use of tab for completion
+		- [syntastic](https://github.com/scrooloose/syntastic): syntax checking
+		- [tabular](https://github.com/godlygeek/tabular): text alignment
+		- [ultisnips](https://github.com/SirVer/ultisnips): snippet manager
+		- [vim-commentary](https://github.com/tpope/vim-commentary): comment code easily
+		- [vim-snippets](https://github.com/honza/vim-snippets): multiple snippets in different languages
+		- [vim-surround](https://github.com/tpope/vim-surround): quoting/parenthesizing made simple
+		- [vim-unimpaired](https://github.com/tpope/vim-unimpaired): pairs of handy bracket mappings
 
 - Internet
 
-   - [firefox](https://www.mozilla.org/en-US/firefox/desktop/): web brower
+	- [firefox](https://www.mozilla.org/en-US/firefox/desktop/): web brower
 
-      - [uBlock Origin](https://addons.mozilla.org/en-us/firefox/addon/ublock-origin/): efficient blocker
-      - [tab groups](https://addons.mozilla.org/en-us/firefox/addon/tab-groups-panorama/): enable panorama feature (disabled since Firefox 45)
-      - [HTTPS-Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/): enable HTTPS automatically
-      - [Decentraleyes](https://addons.mozilla.org/en-us/firefox/addon/decentraleyes/): protect against tracking content delivery
-      - [grammalecte](https://addons.mozilla.org/en-US/firefox/addon/grammalecte-fr/): French grammar checker
-      - [arc theme](https://github.com/horst3180/arc-firefox-theme)
+		- [Decentraleyes](https://addons.mozilla.org/en-us/firefox/addon/decentraleyes/): protect against tracking content delivery
+		- [HTTPS-Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/): enable HTTPS automatically
+		- [arc theme](https://github.com/horst3180/arc-firefox-theme)
+		- [grammalecte](https://addons.mozilla.org/en-US/firefox/addon/grammalecte-fr/): French grammar checker
+		- [tab groups](https://addons.mozilla.org/en-us/firefox/addon/tab-groups-panorama/): enable panorama feature (disabled since Firefox 45)
+		- [uBlock Origin](https://addons.mozilla.org/en-us/firefox/addon/ublock-origin/): efficient blocker
 
-   - [thunderbird](https://www.mozilla.org/en-US/thunderbird/): email client
-   - [weechat](https://weechat.org/): irc client
-
-      - [buffers.pl](https://weechat.org/scripts/source/buffers.pl.html/): sidebar with list of buffers
-      - [colorize_nicks.py](https://weechat.org/scripts/source/colorize_nicks.py.html/)
-      - [tinyurl.py](https://weechat.org/scripts/source/tinyurl.py.html/): get tinyurl.com equivalent for ULRs
-      - [notify_send.pl](https://weechat.org/scripts/source/notify_send.pl.html/): send notifications on hl, private message, ...
+	- [thunderbird](https://www.mozilla.org/en-US/thunderbird/): email client
 
 - Laptop specific
 
-   - [xf86-input-mtrack](https://github.com/p2rkw/xf86-input-mtrack): trackpad config
-   - [libinput-gestures](https://github.com/bulletmark/libinput-gestures) : touchpad actions gestures
-   - [netctl](https://github.com/joukewitteveen/netctl): manage network connections (used mostly for wifi)
-   - [lm-sensors](lm-sensors.org): tools and drivers to monitor hardware
-   - [i7z](https://github.com/ajaiantilal/i7z): cpu monitor tool
-   - [tlp](http://linrunner.de/en/tlp/tlp.html) / powertop: power manager
-   - [mbpfan](https://github.com/dgraziotin/mbpfan) / [macfanctld](https://github.com/MikaelStrom/macfanctld): control fan speed
-   - [thermald](https://github.com/01org/thermal_daemon): control cpu's temperature
-   - cpupower: control power saving related to the processor
-   - [archlinux wiki: power management](https://wiki.archlinux.org/index.php/Power_management)
-   - [archlinux wiki: suspend and hibernate](https://wiki.archlinux.org/index.php/MacBook#Suspend_and_Hibernate)
+	- [NetworkManager](https://wiki.gnome.org/Projects/NetworkManager): manage network connections
+	- [archlinux wiki: power management](https://wiki.archlinux.org/index.php/Power_management)
+	- [archlinux wiki: suspend and hibernate](https://wiki.archlinux.org/index.php/MacBook#Suspend_and_Hibernate)
+	- [libinput-gestures](https://github.com/bulletmark/libinput-gestures) : touchpad actions gestures
+	- [libinput](https://freedesktop.org/wiki/Software/libinput/): trackpad config
+	- [mbpfan](https://github.com/dgraziotin/mbpfan): control fan speed
+	- [thermald](https://github.com/01org/thermal_daemon): control cpu's temperature
+	- [tlp](http://linrunner.de/en/tlp/tlp.html) / powertop: power manager
 
 - Others
 
-   - [alsa](http://www.alsa-project.org/main/index.php/Main_Page) / [pulseaudio](https://www.freedesktop.org/wiki/Software/PulseAudio/): sound system
-   - [ranger](http://ranger.nongnu.org/) / [thunar](http://docs.xfce.org/xfce/thunar/start): file manager
-   - [sxiv](https://github.com/muennich/sxiv) / [feh](http://feh.finalrewind.org/): image viewer
-   - [mpv](https://mpv.io/): video player
-   - [zathura](https://pwmt.org/projects/zathura/): pdf viewer
-   - [libreoffice](https://www.libreoffice.org/): office suite
-   - [keepass](http://keepass.info/): password manager
-   - [transmission](https://www.transmissionbt.com/): bittorent client
-   - [udiskie](https://www.freedesktop.org/wiki/Software/udisks/): automatic disk mounting
-   - [redshift](http://jonls.dk/redshift/): adjust the color temperature of the screen
+	- [alsa](http://www.alsa-project.org/main/index.php/Main_Page) / [pulseaudio](https://www.freedesktop.org/wiki/Software/PulseAudio/): sound system
+	- [pass](https://www.passwordstore.org/): password manager
+	- [libreoffice](https://www.libreoffice.org/): office suite
+	- [mpv](https://mpv.io/): video player
+	- [ranger](http://ranger.nongnu.org/) / [thunar](http://docs.xfce.org/xfce/thunar/start): file manager
+	- [redshift](http://jonls.dk/redshift/): adjust the color temperature of the screen
+	- [sxiv](https://github.com/muennich/sxiv) / [feh](http://feh.finalrewind.org/): image viewer
+	- [transmission](https://www.transmissionbt.com/): bittorent client
+	- [zathura](https://pwmt.org/projects/zathura/): pdf viewer
 
 ## Hardware
 
