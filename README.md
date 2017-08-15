@@ -46,6 +46,7 @@ TODO: add screenshots
 		- [vim-snippets](https://github.com/honza/vim-snippets): multiple snippets in different languages
 		- [vim-surround](https://github.com/tpope/vim-surround): quoting/parenthesizing made simple
 		- [vim-unimpaired](https://github.com/tpope/vim-unimpaired): pairs of handy bracket mappings
+		- [vimtex](https://github.com/lervag/vimtex): edit LaTeX files
 
 - Internet
 
