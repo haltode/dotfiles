@@ -6,7 +6,7 @@ These are my personnal dotfiles for my laptop which is running on [Debian](https
 - [Software](#software)
 - [Hardware](#hardware)
 - [Notes](#notes)
-- [Previous dotfiles](#previous_dotfiles)
+- [Previous dotfiles](#previous-dotfiles)
 
 ---
 
