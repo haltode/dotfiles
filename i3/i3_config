@@ -58,10 +58,6 @@ bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 1%
 bindsym Control+XF86MonBrightnessDown exec --no-startup-id redshift
 bindsym Control+XF86MonBrightnessUp exec --no-startup-id pkill redshift
 
-# Keyboard backlight
-#bindsym XF86KbdBrightnessDown exec --no-startup-id kbdlight down 11
-#bindsym XF86KbdBrightnessUp exec --no-startup-id kbdlight up 11
-
 # Sound control
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 3%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 3%- unmute
@@ -100,9 +96,6 @@ bindsym $mod+Control+l move right
 # Start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 
-# Start rofi locate (to search files and folders)
-#bindsym Control+$mod+d exec xdg-open "$(locate home | rofi -dmenu -i -p "locate:")"
-
 # Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Control+r restart
 
@@ -111,10 +104,6 @@ bindsym $mod+Control+e exec ~/scripts/lock_screen
 
 # Quit i3wm
 bindsym $mod+Control+Escape exec "i3-nagbar -t warning -m 'Quit:' -b 'Logout' 'i3-msg exit' -b 'Reboot' 'systemctl reboot' -b 'Shutdown' 'systemctl poweroff'"
-
-###
-# Scratchpad
-###
 
 ####################
 # Layout keybinding
@@ -142,20 +131,20 @@ bindsym $mod+space focus mode_toggle
 
 # Resize window (you can also use the mouse for that)
 mode "resize" {
-   # These bindings trigger as soon as you enter the resize mode
+	# These bindings trigger as soon as you enter the resize mode
 
-   # Pressing left will shrink the window’s width.
-   # Pressing right will grow the window’s width.
-   # Pressing up will shrink the window’s height.
-   # Pressing down will grow the window’s height.
-   bindsym h resize shrink width 10 px or 10 ppt
-   bindsym j resize grow height 10 px or 10 ppt
-   bindsym k resize shrink height 10 px or 10 ppt
-   bindsym l resize grow width 10 px or 10 ppt
+	# Pressing left will shrink the window’s width.
+	# Pressing right will grow the window’s width.
+	# Pressing up will shrink the window’s height.
+	# Pressing down will grow the window’s height.
+	bindsym h resize shrink width 10 px or 10 ppt
+	bindsym j resize grow height 10 px or 10 ppt
+	bindsym k resize shrink height 10 px or 10 ppt
+	bindsym l resize grow width 10 px or 10 ppt
 
-   # Back to normal: Enter or Escape
-   bindsym Return mode "default"
-   bindsym Escape mode "default"
+	# Back to normal: Enter or Escape
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -179,6 +168,6 @@ for_window [window_role=floating_terminal] floating enable
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
- bar {
-    status_command i3status
+bar {
+	status_command i3status
 }
