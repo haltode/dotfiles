@@ -32,6 +32,10 @@ ln -s $dotfiles/termite/config $HOME/.config/termite/config
 ln -s $dotfiles/vim/vimrc $HOME/.vimrc
 ln -s $dotfiles/vim/vim $HOME/.vim
 
+# xdg
+ln -s $dotfiles/xdg/user-dirs.dirs $HOME/.config/user-dirs.dirs
+ln -s $dotfiles/xdg/user-dirs.locale $HOME/.config/user-dirs.locale
+
 # xorg
 ln -s $dotfiles/xorg/xinitrc $HOME/.xinitrc
 ln -s $dotfiles/xorg/Xmodmap $HOME/.Xmodmap
