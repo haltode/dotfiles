@@ -76,7 +76,7 @@ TODO: add screenshots
 	- [mbpfan](https://github.com/dgraziotin/mbpfan): control fan speed
 	- [network manager](https://wiki.gnome.org/Projects/NetworkManager): manage network connections
 	- [thermald](https://github.com/01org/thermal_daemon): control cpu's temperature
-	- [tlp](http://linrunner.de/en/tlp/tlp.html) / powertop: power manager
+	- [tlp](http://linrunner.de/en/tlp/tlp.html): power manager
 
 - Others
 
