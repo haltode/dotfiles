@@ -1,5 +1,5 @@
 [global]
-font = 18
+font = pango: DejaVu Sans Mono, FontAwesome 17
 
 # The format of the message. Possible variables are:
 # %a appname
