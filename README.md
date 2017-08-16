@@ -2,6 +2,14 @@
 
 These are my personnal dotfiles for my laptop which is running on [Debian](https://www.debian.org/) Stretch (stable) and is using [i3wm](http://i3wm.org/).
 
+- [Screenshots](#screenshots)
+- [Software](#software)
+- [Hardware](#hardware)
+- [Notes](#notes)
+- [Previous dotfiles](#previous_dotfiles)
+
+---
+
 ## Screenshots
 
 TODO: add screenshots
@@ -107,7 +115,7 @@ Here are some personal notes and useful links that helped me during the installa
 	- install [vim-gtk3](https://packages.debian.org/stretch/vim-gtk3) to get vim compiled with some features like python, xterm-clipboard, etc.
 	- vimtex plugin: to clean all junk files <https://github.com/lervag/vimtex/issues/576>
 
-## Old dotfiles
+## Previous dotfiles
 
 This is my third setup, you can take a look at some older ones:
 
