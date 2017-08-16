@@ -75,9 +75,10 @@ TODO: add screenshots
 - Others
 
 	- [alsa](http://www.alsa-project.org/main/index.php/Main_Page) / [pulseaudio](https://www.freedesktop.org/wiki/Software/PulseAudio/): sound system
-	- [pass](https://www.passwordstore.org/): password manager
+	- [htop](http://hisham.hm/htop/): process viewer
 	- [libreoffice](https://www.libreoffice.org/): office suite
 	- [mpv](https://mpv.io/): video player
+	- [pass](https://www.passwordstore.org/): password manager
 	- [ranger](http://ranger.nongnu.org/) / [thunar](http://docs.xfce.org/xfce/thunar/start): file manager
 	- [redshift](http://jonls.dk/redshift/): adjust the color temperature of the screen
 	- [sxiv](https://github.com/muennich/sxiv) / [feh](http://feh.finalrewind.org/): image viewer
@@ -87,6 +88,24 @@ TODO: add screenshots
 ## Hardware
 
 Macbook Pro 13,3" Retina screen, 2.7GHz dual-core Intel Core i5 processor, 8GB RAM, 256GB SSD.
+
+## Notes
+
+Here are some personal notes and useful links that helped me during the installation and setup of this config:
+
+- Debian wiki
+	- <https://wiki.debian.org/MacBook>
+	- <https://wiki.debian.org/MacBookPro>
+	- <https://wiki.debian.org/InstallingDebianOn/Apple/MacBookPro/Early-2015-13-inch>
+	- <https://wiki.debian.org/MacBook/Wireless>
+	- <https://wiki.debian.org/brcmfmac>
+- [libinput-gestures](https://github.com/bulletmark/libinput-gestures): manual install
+- install [network-manager-gnome](https://packages.debian.org/stable/network-manager-gnome) to get nm-applet (which is nicer than nmtui to manage wifi connections)
+- xbacklight problem: https://askubuntu.com/a/715310
+- termite: manual install using this script <https://github.com/Corwind/termite-install/blob/ce1a6f771f0ec07f5cb0546af7d5025fc984ed97/termite-install.sh>
+- vim
+	- install [vim-gtk3](https://packages.debian.org/stretch/vim-gtk3) to get vim compiled with some features like python, xterm-clipboard, etc.
+	- vimtex plugin: to clean all junk files <https://github.com/lervag/vimtex/issues/576>
 
 ## Old dotfiles
 
