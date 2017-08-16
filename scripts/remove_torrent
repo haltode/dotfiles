@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-TORRENTLIST=`transmission-remote --auth=user:password --list | sed -e '1d;$d;s/^ *//' | cut --only-delimited --delimiter=' ' --fields=1`
+TORRENTLIST=`transmission-remote --list | sed -e '1d;$d;s/^ *//' | cut --only-delimited --delimiter=' ' --fields=1`
 
 for TORRENTID in $TORRENTLIST
 do
-	DL_COMPLETED=`transmission-remote --auth=user:password --torrent $TORRENTID --info | grep "Percent Done: 100%"`
+	DL_COMPLETED=`transmission-remote --torrent $TORRENTID --info | grep "Percent Done: 100%"`
 	if [ "$DL_COMPLETED" != "" ]; then
-		TORRENT_NAME=`transmission-remote --auth=user:password --torrent $TORRENTID --info | grep Name | cut --delimiter=':' --fields=2`
+		TORRENT_NAME=`transmission-remote --torrent $TORRENTID --info | grep Name | cut --delimiter=':' --fields=2`
 		notify-send -u normal "torrent" "'$TORRENT_NAME' is completed"
-		transmission-remote --auth=user:password --torrent $TORRENTID --remove
+		transmission-remote --torrent $TORRENTID --remove
 	fi
 done
