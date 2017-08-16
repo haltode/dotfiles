@@ -24,8 +24,8 @@ TODO: add screenshots
 
 	- GTK
 
-		- [Numix icon](https://github.com/numixproject/numix-icon-theme)
-		- [Numix](https://github.com/numixproject/numix-gtk-theme)
+		- [numix icon](https://github.com/numixproject/numix-icon-theme)
+		- [numix](https://github.com/numixproject/numix-gtk-theme)
 
 - Console environment
 
@@ -52,10 +52,10 @@ TODO: add screenshots
 
 	- [firefox](https://www.mozilla.org/en-US/firefox/desktop/): web brower
 
-		- [Decentraleyes](https://addons.mozilla.org/en-us/firefox/addon/decentraleyes/): protect against tracking content delivery
-		- [HTTPS-Everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/): enable HTTPS automatically
 		- [arc theme](https://github.com/horst3180/arc-firefox-theme)
+		- [decentraleyes](https://addons.mozilla.org/en-us/firefox/addon/decentraleyes/): protect against tracking content delivery
 		- [grammalecte](https://addons.mozilla.org/en-US/firefox/addon/grammalecte-fr/): French grammar checker
+		- [https-everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/): enable HTTPS automatically
 		- [tab groups](https://addons.mozilla.org/en-us/firefox/addon/tab-groups-panorama/): enable panorama feature (disabled since Firefox 45)
 		- [uBlock Origin](https://addons.mozilla.org/en-us/firefox/addon/ublock-origin/): efficient blocker
 
@@ -63,12 +63,12 @@ TODO: add screenshots
 
 - Laptop specific
 
-	- [NetworkManager](https://wiki.gnome.org/Projects/NetworkManager): manage network connections
 	- [archlinux wiki: power management](https://wiki.archlinux.org/index.php/Power_management)
 	- [archlinux wiki: suspend and hibernate](https://wiki.archlinux.org/index.php/MacBook#Suspend_and_Hibernate)
 	- [libinput-gestures](https://github.com/bulletmark/libinput-gestures) : touchpad actions gestures
 	- [libinput](https://freedesktop.org/wiki/Software/libinput/): trackpad config
 	- [mbpfan](https://github.com/dgraziotin/mbpfan): control fan speed
+	- [network manager](https://wiki.gnome.org/Projects/NetworkManager): manage network connections
 	- [thermald](https://github.com/01org/thermal_daemon): control cpu's temperature
 	- [tlp](http://linrunner.de/en/tlp/tlp.html) / powertop: power manager
 
