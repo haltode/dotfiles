@@ -110,7 +110,7 @@ bindsym $mod+Control+r restart
 bindsym $mod+Control+e exec ~/scripts/lock_screen
 
 # Quit i3wm
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Quit:' -b 'Logout' 'i3-msg exit' -b 'Reboot' 'systemctl reboot' -b 'Shutdown' 'systemctl poweroff'"
+bindsym $mod+Control+Escape exec "i3-nagbar -t warning -m 'Quit:' -b 'Logout' 'i3-msg exit' -b 'Reboot' 'systemctl reboot' -b 'Shutdown' 'systemctl poweroff'"
 
 ###
 # Scratchpad
