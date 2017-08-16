@@ -71,8 +71,6 @@ TODO: add screenshots
 
 - Laptop specific
 
-	- [archlinux wiki: power management](https://wiki.archlinux.org/index.php/Power_management)
-	- [archlinux wiki: suspend and hibernate](https://wiki.archlinux.org/index.php/MacBook#Suspend_and_Hibernate)
 	- [libinput-gestures](https://github.com/bulletmark/libinput-gestures) : touchpad actions gestures
 	- [libinput](https://freedesktop.org/wiki/Software/libinput/): trackpad config
 	- [mbpfan](https://github.com/dgraziotin/mbpfan): control fan speed
@@ -107,6 +105,9 @@ Here are some personal notes and useful links that helped me during the installa
 	- <https://wiki.debian.org/InstallingDebianOn/Apple/MacBookPro/Early-2015-13-inch>
 	- <https://wiki.debian.org/MacBook/Wireless>
 	- <https://wiki.debian.org/brcmfmac>
+- Arch wiki
+	- <https://wiki.archlinux.org/index.php/HiDPI>
+	- <https://wiki.archlinux.org/index.php/Power_management>
 - [libinput-gestures](https://github.com/bulletmark/libinput-gestures): manual install
 - install [network-manager-gnome](https://packages.debian.org/stable/network-manager-gnome) to get nm-applet (which is nicer than nmtui to manage wifi connections)
 - xbacklight problem: https://askubuntu.com/a/715310
