@@ -9,7 +9,7 @@ set -x TERMINAL termite
 set -x BROWSER firefox
 set -x PAGER less
 set -x MOVPLAY mpv
-# set -x PICVIEW 
+set -x PICVIEW sxiv
 
 # -----------------------------------------------------------------------------
 # Alias 
