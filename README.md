@@ -35,7 +35,7 @@ These are my personnal dotfiles for my laptop which is running on [Debian](https
 	- [termite](https://github.com/thestinger/termite): terminal emulator
 	- [fish](https://fishshell.com/): command-line shell
 
-		- [z script](https://github.com/rupa/z): easy way to go to most frequent directories
+		- [fzf](https://github.com/junegunn/fzf): command-line fuzzy finder
 
 	- [vim](http://www.vim.org/): text editor
 
