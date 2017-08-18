@@ -15,10 +15,10 @@ These are my personnal dotfiles for my laptop which is running on [Debian](https
 
 	- [i3wm](http://i3wm.org/): tiling window manager
       
-		- [dmenu](http://tools.suckless.org/dmenu/): program launcher
 		- [dunst](http://www.knopwob.org/dunst/): notification system
 		- [i3lock](https://i3wm.org/i3lock/) with a custom [i3lock screen](https://redd.it/3358vu)
 		- [i3status](https://i3wm.org/i3status/): status bar
+		- [rofi](https://davedavenport.github.io/rofi/): program launcher
 
 	- Fonts
 

@@ -93,8 +93,11 @@ bindsym $mod+Control+j move down
 bindsym $mod+Control+k move up
 bindsym $mod+Control+l move right
 
-# Start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+# Start rofi (a program launcher)
+bindsym $mod+d exec rofi -show run
+
+# Start rofi locate (to search files and folders)
+bindsym Control+$mod+d exec xdg-open "$(locate ~ | rofi -dmenu -i -p "locate:")"
 
 # Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Control+r restart
