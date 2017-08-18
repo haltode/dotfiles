@@ -55,11 +55,9 @@ These are my personnal dotfiles for my laptop which is running on [Debian](https
 
 	- [firefox](https://www.mozilla.org/en-US/firefox/desktop/): web brower
 
-		- [arc theme](https://github.com/horst3180/arc-firefox-theme)
 		- [decentraleyes](https://addons.mozilla.org/en-us/firefox/addon/decentraleyes/): protect against tracking content delivery
 		- [grammalecte](https://addons.mozilla.org/en-US/firefox/addon/grammalecte-fr/): French grammar checker
 		- [https-everywhere](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/): enable HTTPS automatically
-		- [tab groups](https://addons.mozilla.org/en-us/firefox/addon/tab-groups-panorama/): enable panorama feature (disabled since Firefox 45)
 		- [uBlock Origin](https://addons.mozilla.org/en-us/firefox/addon/ublock-origin/): efficient blocker
 
 	- [thunderbird](https://www.mozilla.org/en-US/thunderbird/): email client
