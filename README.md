@@ -2,17 +2,12 @@
 
 These are my personnal dotfiles for my laptop which is running on [Debian](https://www.debian.org/) Stretch (stable) and is using [i3wm](http://i3wm.org/).
 
-- [Screenshots](#screenshots)
 - [Software](#software)
 - [Hardware](#hardware)
 - [Notes](#notes)
 - [Previous dotfiles](#previous-dotfiles)
 
 ---
-
-## Screenshots
-
-TODO: add screenshots
 
 ## Software
 
