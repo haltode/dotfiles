@@ -46,9 +46,20 @@ bindsym $mod+Control+0 move container to workspace 10
 bindsym $mod+n workspace back_and_forth
 bindsym $mod+Control+n move container to workspace back_and_forth; workspace back_and_forth
 
+# Next/prev workspace
+bindsym $mod+o workspace prev
+bindsym $mod+p workspace next
+
+# Move focused workspace to other monitor
+bindsym Control+XF86LaunchB move workspace to output left
+
 ####################
 # Custom keybinding
 ####################
+
+# Dual screen (HDMI)
+# https://wiki.archlinux.org/index.php/HiDPI#Multiple_displays
+bindsym $mod+Control+m exec xrandr --output eDP1 --auto --output HDMI2 --auto --panning 2880x1620+2560+0 --scale 1.5x1.5 --right-of eDP1
 
 # Screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1%
