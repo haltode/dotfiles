@@ -61,7 +61,7 @@ bindsym Control+XF86LaunchB move workspace to output left
 # https://wiki.archlinux.org/index.php/HiDPI#Multiple_displays
 bindsym $mod+m exec xrandr --output eDP1 --auto --output HDMI2 --auto --panning 2880x1620+2560+0 --scale 1.5x1.5 --right-of eDP1
 # Default config
-bindsym $mod+Control+m exec xrandr -s 0
+bindsym $mod+Control+m exec xrandr --output HDMI2 --off
 
 # Screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1%
