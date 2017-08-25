@@ -77,7 +77,7 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 3%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # Start playing youtube video in mpv
-bindsym XF86LaunchA workspace 3; exec mpv --fullscreen `xsel`
+bindsym XF86LaunchA workspace 3; exec mpv --fullscreen --ytdl-format=22 `xsel`
 
 ####################
 # System keybinding
