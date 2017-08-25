@@ -82,6 +82,7 @@ These are my personnal dotfiles for my laptop which is running on [Debian](https
 	- [redshift](http://jonls.dk/redshift/): adjust the color temperature of the screen
 	- [sxiv](https://github.com/muennich/sxiv) / [feh](http://feh.finalrewind.org/): image viewer
 	- [transmission](https://www.transmissionbt.com/): bittorent client
+	- [udiskie](https://github.com/coldfix/udiskie):  automounter for removable media
 	- [xclip](https://github.com/astrand/xclip): clipboard manager
 	- [zathura](https://pwmt.org/projects/zathura/): pdf viewer
 

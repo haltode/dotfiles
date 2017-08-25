@@ -14,6 +14,9 @@ exec --no-startup-id dunst
 # Network Manager applet
 exec --no-startup-id nm-applet
 
+# Udiskie
+exec --no-startup-id udiskie --tray
+
 #######################
 # Workspace keybinding
 #######################
