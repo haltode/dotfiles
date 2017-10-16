@@ -72,3 +72,6 @@ function T
 	sleep 3
 	transmission-remote-cli
 end
+
+# OPAM configuration
+source /home/haltode/.opam/opam-init/init.fish > /dev/null 2> /dev/null or true
