@@ -4,6 +4,9 @@
 # Load Xresources config
 xrdb ~/.Xresources
 
+# Keyboard layout
+setxkbmap fr -variant oss
+
 # Key mapping
 xmodmap ~/.Xmodmap
 
