@@ -44,5 +44,8 @@ ln -s $dotfiles/xorg/Xmodmap $HOME/.Xmodmap
 ln -s $dotfiles/xorg/Xresources $HOME/.Xresources
 ln -s $dotfiles/xorg/xorg.conf.d /etc/X11/xorg.conf.d
 
+# zathura
+ln -s $dotfiles/zathura/zathurarc $HOME/.config/zathura/zathurarc
+
 # miscellaneous
 ln -s $dotfiles/misc/mbpfan.conf /etc/mbpfan.conf
