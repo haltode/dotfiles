@@ -61,6 +61,9 @@ alias cfg-vim='vim ~/dotfiles/vim/vimrc'
 alias cfg-fish='vim ~/dotfiles/fish/config.fish'
 alias cfg-termite='vim ~/dotfiles/termite/config'
 
+# Misc
+alias setup_cp='cp ~/projects/acm/notebook/src/misc/* .'
+
 # -----------------------------------------------------------------------------
 # Function 
 # -----------------------------------------------------------------------------
