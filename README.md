@@ -111,6 +111,7 @@ Here are some personal notes and useful links that helped me during the installa
 	- install [vim-gtk3](https://packages.debian.org/stretch/vim-gtk3) to get vim compiled with some features like python, xterm-clipboard, etc.
 	- vimtex plugin: to clean all junk files <https://github.com/lervag/vimtex/issues/576>
 - [GNU/Linux Crypto: Introduction](https://sanctum.geek.nz/arabesque/gnu-linux-crypto-introduction/): nice series of article about crypto, GPG, ssh, etc.
+- [Getting suspend in Linux working on a MacBook Pro](https://joshtronic.com/2017/03/13/getting-suspend-in-linux-working-on-a-macbook-pro/)
 
 ## Previous dotfiles
 
