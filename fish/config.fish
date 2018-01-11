@@ -53,7 +53,7 @@ alias mr='make run'
 alias mi='make install'
 
 # Python
-alias p='python'
+alias p='python3'
 
 # Config file
 alias cfg-i3='vim ~/dotfiles/i3/i3_config'
@@ -62,7 +62,7 @@ alias cfg-fish='vim ~/dotfiles/fish/config.fish'
 alias cfg-termite='vim ~/dotfiles/termite/config'
 
 # Misc
-alias setup_cp='cp ~/projects/acm/notebook/src/misc/* .'
+alias setup_cp='cp ~/projects/acm/notebook/precontest/* .'
 
 # -----------------------------------------------------------------------------
 # Function 
