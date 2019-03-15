@@ -119,7 +119,7 @@ bindsym Control+$mod+d exec xdg-open "$(locate ~ | rofi -dmenu -i -p "locate:")"
 bindsym $mod+Control+r restart
 
 # Lock computer
-bindsym $mod+Control+e exec ~/scripts/lock_screen
+bindsym $mod+Control+e exec i3lock
 
 # Quit i3wm
 bindsym $mod+Control+Escape exec "i3-nagbar -t warning -m 'Quit:' -b 'Logout' 'i3-msg exit' -b 'Reboot' 'systemctl reboot' -b 'Shutdown' 'systemctl poweroff'"
