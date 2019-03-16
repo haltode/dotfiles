@@ -67,8 +67,8 @@ bindsym $mod+m exec xrandr --output eDP1 --auto --output HDMI2 --auto --panning 
 bindsym $mod+Control+m exec xrandr --output HDMI2 --off
 
 # Screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 1%
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 1%
+bindsym XF86MonBrightnessDown exec cbacklight --dec 1
+bindsym XF86MonBrightnessUp exec cbacklight --inc 1
 
 # Redshift control
 bindsym Control+XF86MonBrightnessDown exec --no-startup-id redshift
