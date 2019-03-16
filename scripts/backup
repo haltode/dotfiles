@@ -1,4 +1,9 @@
 #!/bin/bash
 
-# More info: https://wiki.archlinux.org/index.php/Full_system_backup_with_rsync
-sudo rsync  -aAX --info=progress2 --delete --exclude={"/home/*/.thumbnails/*","/home/*/.cache/mozilla/*","/home/*/.cache/chromium/*","/home/*/.local/share/Trash/*","/home/*/.gvfs"} /home/haltode/ /media/haltode/usb_backup/laptop
+# https://wiki.archlinux.org/index.php/Full_system_backup_with_rsync
+
+# usb stick 64GB
+sudo rsync  -aAX --info=progress2 --delete --exclude={"/home/*/.thumbnails/*","/home/*/.cache/mozilla/*","/home/*/.cache/chromium/*","/home/*/.local/share/Trash/*","/home/*/.gvfs","/home/haltode/prologin/*"} /home/haltode/ /media/haltode/usb_backup/laptop
+
+# 1To DD
+sudo rsync  -aAX --info=progress2 --delete --exclude={"/home/*/.thumbnails/*","/home/*/.cache/mozilla/*","/home/*/.cache/chromium/*","/home/*/.local/share/Trash/*","/home/*/.gvfs"} /home/haltode/ /media/haltode/Maxtor/laptop
