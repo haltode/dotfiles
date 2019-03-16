@@ -4,9 +4,7 @@ dotfiles=$HOME/dotfiles
 ln -s $dotfiles/dunst $HOME/.config/dunst
 
 # fish
-ln -s $dotfiles/fish/config.fish $HOME/.config/fish/config.fish
-ln -s $dotfiles/fish/functions/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
-ln -s $dotfiles/fish/functions/start_agent.fish ~/.config/fish/functions/start_agent.fish
+ln -s $dotfiles/fish $HOME/.config/fish
 
 # gestures
 ln -s $dotfiles/gestures/libinput-gestures.conf $HOME/.config/libinput-gestures.conf
