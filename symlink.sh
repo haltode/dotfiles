@@ -14,7 +14,8 @@ ln -s $dotfiles/gtk/gtk-2.0 $HOME/.gtkrc-2.0
 ln -s $dotfiles/gtk/gtk-3.0 $HOME/.config/gtk-3.0/settings.ini
 
 # i3
-ln -s $dotfiles/i3/config $HOME/.config/i3/config
+ln -s $dotfiles/i3/i3_config $HOME/.config/i3/config
+ln -s $dotfiles/i3/i3status_config $HOME/.config/i3status/config
 
 # redshift
 ln -s $dotfiles/redshift/redshift.conf $HOME/.config/redshift.conf
@@ -45,5 +46,5 @@ ln -s $dotfiles/xorg/xorg.conf.d /etc/X11/xorg.conf.d
 # zathura
 ln -s $dotfiles/zathura/zathurarc $HOME/.config/zathura/zathurarc
 
-# miscellaneous
+# misc.
 ln -s $dotfiles/misc/mbpfan.conf /etc/mbpfan.conf
