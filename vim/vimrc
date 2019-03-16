@@ -1,6 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Enable features not Vi compatible
 set nocompatible
 
@@ -8,17 +9,25 @@ set nocompatible
 execute pathogen#infect()
 execute pathogen#helptags()
 
+filetype on
 filetype plugin on
 filetype indent on
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Show current position
 set ruler
 
 " Show line numbers
-set number
+set number relativenumber
+" https://jeffkreeftmeijer.com/vim-number/
+augroup numbertoggle
+    autocmd!
+    autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+    autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 " Show current editing mode
 set showmode
@@ -30,15 +39,29 @@ set showmatch
 set laststatus=2
 
 " Always display the tabline, even if there is only one tab
-set showtabline=2 
+set showtabline=2
 
 " Colored column
-highlight ColorColumn ctermbg=blue
 set colorcolumn=81
+
+" No terminal bells on error
+set noerrorbells
+
+" Fix <esc>+O timeout
+set timeout timeoutlen=5000 ttimeoutlen=100
+
+" Use tab expansion in settings/commands
+set wildmenu
+set wildmode=full
+
+" Display extra whitespaces in blue
+set list
+set listchars=tab:»·,trail:·
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 syntax on
 set background=dark
 
@@ -48,30 +71,48 @@ set t_Co=256
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" File type specific options overwrite these parameters (see .vim/after/ftplugin)
-" Use tabs with 4 spaces width
-set noexpandtab
+
+" 80 cols
+set textwidth=80
+
+" File type specific options overwrite these parameters
+" (see .vim/after/ftplugin)
+
+" Use 4 spaces
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4
+set expandtab
+set smarttab
 
 " Indentation
 set autoindent
-set smartindent
 set shiftround
+
+" http://vim.wikia.com/wiki/Restoring_indent_after_typing_hash
+" set smartindent
+set cindent
+set cinkeys-=0#
+set indentkeys-=0#
 
 " Smart backspace
 set backspace=indent,eol,start
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Search 
+" => Search
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Highlight search results
 set hlsearch
 
-" Ctrl-N stops hlsearch 
+" Ctrl-N stops hlsearch
 nmap <silent> <C-N> :silent noh<cr>
 
+set showmatch
 set ignorecase
+" ignorecase does not play nicely with completion
+set infercase
+set incsearch
 
 " First search for the current directory containing the current
 " file, then the current directory, then each directory under
@@ -81,68 +122,62 @@ set path=.,,**
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Turn backup off
 set nobackup
 set nowb
 set noswapfile
 
+" Persistent undo
+set undofile
+set undodir=~/.vimtmp/undo
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Editing mappings
+" => Custom mappings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" With a map leader it's possible to do extra key combinations
-" like <leader>w saves the current file
+
 let mapleader = "\<Space>"
 let g:mapleader = "\<Space>"
 
-" Fast saving
-nmap <leader>w :w<cr>
-
-" Fast quitting
-nmap <leader>q :q<cr>
+" Toggle paste
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
 
 " Remap VIM 0 to first non-blank character
 map 0 ^
+
+" FZF vim integration
+set rtp+=~/.fzf
+map <c-p> :FZF<CR>
+
+" repeat last shell command (eg use: make, custom check script, etc.)
+nnoremap <CR> :w<CR>:!!<CR>
+
+" Improve jumping between buffers
+nnoremap gb :ls<CR>:b<Space>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" ctrlP config
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'a'
-
-" Tabularize shortcuts
-nnoremap <Leader>a :Tabularize /
-vnoremap <Leader>a :Tabularize /
-
-" Enable expansion with delimitMate
-let g:delimitMate_expand_cr = 1
-
-" Syntastic config
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_open = 1
-
-" Vim-Tex
-let g:vimtex_view_general_viewer = 'zathura'
-let g:vimtex_compiler_latexmk = {'callback' : 0}
+" Grammalecte
+let g:grammalecte_cli_py='/home/haltode/tools/grammalecte/grammalecte-cli.py'
+let g:grammalecte_win_height=20
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
 
-" Return to last edit position when opening files (You want this!)
+" Return to last edit position when opening files
 autocmd BufReadPost *
-	\ if line("'\"") > 0 && line("'\"") <= line("$") |
-	\ exe "normal! g`\"" |
-	\ endif
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \ exe "normal! g`\"" |
+    \ endif
 " Remember info about open buffers on close
 set viminfo^=%
 
 " Disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" Automatically equalize splits when Vim is resized
+autocmd VimResized * wincmd =
