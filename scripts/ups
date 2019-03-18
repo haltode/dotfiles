@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Default image name is the current date, or the first parameter if there is one
+img_id=${1:-`date +%F-%H%M%S`}
+output="$img_id.png"
+
+scrot /tmp/$output -s
+if [ $? -eq 0 ]; then
+    scp /tmp/$output ovh:/var/www/haltode.fr/html/upload/
+
+    url="https://haltode.fr/upload/$output"
+    echo $url | xsel -ib
+    echo "Upload done."
+    echo "$url (copied to clipboard)"
+else
+    echo "exited scrot, no upload"
+fi
