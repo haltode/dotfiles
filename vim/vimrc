@@ -5,10 +5,6 @@
 " Enable features not Vi compatible
 set nocompatible
 
-" Initialize pathogen
-execute pathogen#infect()
-execute pathogen#helptags()
-
 filetype on
 filetype plugin on
 filetype indent on
@@ -150,19 +146,8 @@ map 0 ^
 set rtp+=~/.fzf
 map <c-p> :FZF<CR>
 
-" repeat last shell command (eg use: make, custom check script, etc.)
-nnoremap <CR> :w<CR>:!!<CR>
-
 " Improve jumping between buffers
 nnoremap gb :ls<CR>:b<Space>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugins
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Grammalecte
-let g:grammalecte_cli_py='/home/haltode/tools/grammalecte/grammalecte-cli.py'
-let g:grammalecte_win_height=20
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
