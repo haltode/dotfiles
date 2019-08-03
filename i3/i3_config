@@ -2,19 +2,9 @@
 # Auto-start programs
 ######################
 
-# Mouse gestures
 exec --no-startup-id libinput-gestures-setup start
-
-# Redshift
 exec --no-startup-id redshift
-
-# Notification system
-exec --no-startup-id dunst
-
-# Network Manager applet
 exec --no-startup-id nm-applet
-
-# Udiskie
 exec --no-startup-id udiskie --tray
 
 #######################
@@ -34,53 +24,37 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # Move focused container to workspace
-bindsym $mod+Control+1 move container to workspace 1
-bindsym $mod+Control+2 move container to workspace 2
-bindsym $mod+Control+3 move container to workspace 3
-bindsym $mod+Control+4 move container to workspace 4
-bindsym $mod+Control+5 move container to workspace 5
-bindsym $mod+Control+6 move container to workspace 6
-bindsym $mod+Control+7 move container to workspace 7
-bindsym $mod+Control+8 move container to workspace 8
-bindsym $mod+Control+9 move container to workspace 9
-bindsym $mod+Control+0 move container to workspace 10
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
 
 # Workspace back and forth (with/without active container)
 bindsym $mod+n workspace back_and_forth
-bindsym $mod+Control+n move container to workspace back_and_forth; workspace back_and_forth
+bindsym $mod+Shift+n move container to workspace back_and_forth; workspace back_and_forth
 
 # Next/prev workspace
 bindsym $mod+o workspace prev
 bindsym $mod+p workspace next
 
-# Move focused workspace to other monitor
-bindsym Control+XF86LaunchB move workspace to output left
-
 ####################
 # Custom keybinding
 ####################
 
-# Dual screen (HDMI)
-# https://wiki.archlinux.org/index.php/HiDPI#Multiple_displays
-bindsym $mod+m exec xrandr --output eDP1 --auto --output HDMI2 --auto --panning 2880x1620+2560+0 --scale 1.5x1.5 --right-of eDP1
-# Default config
-bindsym $mod+Control+m exec xrandr --output HDMI2 --off
-
 # Screen brightness
-bindsym XF86MonBrightnessDown exec cbacklight --dec 1
-bindsym XF86MonBrightnessUp exec cbacklight --inc 1
-
-# Redshift control
-bindsym Control+XF86MonBrightnessDown exec --no-startup-id redshift
-bindsym Control+XF86MonBrightnessUp exec --no-startup-id pkill redshift
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 
 # Sound control
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 3%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 3%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
-
-# Start playing youtube video in mpv
-bindsym XF86LaunchA exec mpv --fullscreen --ytdl-format=22 `xsel`; exec xsel -bc
 
 ####################
 # System keybinding
@@ -92,7 +66,7 @@ set $mod Mod4
 bindsym $mod+Return exec i3-sensible-terminal
 
 # Start a floating terminal
-bindsym $mod+Control+Return exec i3-sensible-terminal --role floating_terminal
+bindsym $mod+Shift+Return exec i3-sensible-terminal --role floating_terminal
 
 # Kill focused window
 bindsym $mod+c kill
@@ -104,25 +78,22 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 # Move focused window
-bindsym $mod+Control+h move left
-bindsym $mod+Control+j move down
-bindsym $mod+Control+k move up
-bindsym $mod+Control+l move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
-# Start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run
-
-# Start rofi locate (to search files and folders)
-bindsym Control+$mod+d exec xdg-open "$(locate ~ | rofi -dmenu -i -p "locate:")"
+# Start dmenu (a program launcher)
+bindsym $mod+d exec dmenu_run
 
 # Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Control+r restart
+bindsym $mod+Shift+r restart
 
 # Lock computer
-bindsym $mod+Control+e exec i3lock
+bindsym $mod+Shift+e exec i3lock
 
 # Quit i3wm
-bindsym $mod+Control+Escape exec "i3-nagbar -t warning -m 'Quit:' -b 'Logout' 'i3-msg exit' -b 'Reboot' 'systemctl reboot' -b 'Shutdown' 'systemctl poweroff'"
+bindsym $mod+Shift+Escape exec "i3-nagbar -t warning -m 'Quit:' -b 'Logout' 'i3-msg exit' -b 'Reboot' 'systemctl reboot' -b 'Shutdown' 'systemctl poweroff'"
 
 ####################
 # Layout keybinding
@@ -143,7 +114,7 @@ bindsym $mod+t layout tabbed
 bindsym $mod+e layout toggle split
 
 # Toggle tiling / floating
-bindsym $mod+Control+space floating toggle
+bindsym $mod+Shift+space floating toggle
 
 # Change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -174,7 +145,7 @@ bindsym $mod+r mode "resize"
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango: DejaVu Sans Mono, FontAwesome 8
+font pango: DejaVu Sans Mono, FontAwesome 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
