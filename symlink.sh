@@ -1,17 +1,10 @@
 dotfiles=$HOME/dotfiles
 
-# dunst
-ln -s $dotfiles/dunst $HOME/.config/dunst
-
 # fish
 ln -s $dotfiles/fish $HOME/.config/fish
 
 # gestures
 ln -s $dotfiles/gestures/libinput-gestures.conf $HOME/.config/libinput-gestures.conf
-
-# gtk
-ln -s $dotfiles/gtk/gtk-2.0 $HOME/.gtkrc-2.0
-ln -s $dotfiles/gtk/gtk-3.0 $HOME/.config/gtk-3.0/settings.ini
 
 # i3
 ln -s $dotfiles/i3/i3_config $HOME/.config/i3/config
@@ -22,9 +15,6 @@ ln -s $dotfiles/redshift/redshift.conf $HOME/.config/redshift.conf
 
 # scripts
 ln -s $dotfiles/scripts $HOME/scripts
-
-# systemd
-ln -s $dotfiles/systemd/journald.conf /etc/systemd/journald.conf
 
 # termite
 ln -s $dotfiles/termite/config $HOME/.config/termite/config
@@ -38,13 +28,7 @@ ln -s $dotfiles/xdg/user-dirs.dirs $HOME/.config/user-dirs.dirs
 ln -s $dotfiles/xdg/user-dirs.locale $HOME/.config/user-dirs.locale
 
 # xorg
-ln -s $dotfiles/xorg/xinitrc $HOME/.xinitrc
-ln -s $dotfiles/xorg/Xmodmap $HOME/.Xmodmap
-ln -s $dotfiles/xorg/Xresources $HOME/.Xresources
 ln -s $dotfiles/xorg/xorg.conf.d /etc/X11/xorg.conf.d
 
 # zathura
 ln -s $dotfiles/zathura/zathurarc $HOME/.config/zathura/zathurarc
-
-# misc.
-ln -s $dotfiles/misc/mbpfan.conf /etc/mbpfan.conf
