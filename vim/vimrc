@@ -135,6 +135,12 @@ set undodir=~/.vimtmp/undo
 let mapleader = "\<Space>"
 let g:mapleader = "\<Space>"
 
+" Easier navigation between splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Toggle paste
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
