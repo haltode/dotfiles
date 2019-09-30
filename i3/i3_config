@@ -90,10 +90,10 @@ bindsym $mod+d exec dmenu_run
 bindsym $mod+Shift+r restart
 
 # Lock computer
-bindsym $mod+Shift+e exec i3lock
+bindsym $mod+Ctrl+l exec i3lock
 
 # Quit i3wm
-bindsym $mod+Shift+Escape exec "i3-nagbar -t warning -m 'Quit:' -b 'Logout' 'i3-msg exit' -b 'Reboot' 'systemctl reboot' -b 'Shutdown' 'systemctl poweroff'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Quit:' -b 'Logout' 'i3-msg exit' -b 'Reboot' 'systemctl reboot' -b 'Shutdown' 'systemctl poweroff'"
 
 ####################
 # Layout keybinding
