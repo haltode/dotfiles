@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scp $1 ovh:/var/www/haltode.fr/html/upload/
+scp $1 keaton:/home/haltode/www/haltode.fr/html/upload/
 
 url="https://haltode.fr/upload/$1"
 echo $url | xsel -ib

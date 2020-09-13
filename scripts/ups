@@ -6,7 +6,7 @@ output="$img_id.png"
 
 scrot /tmp/$output -s
 if [ $? -eq 0 ]; then
-    scp /tmp/$output ovh:/var/www/haltode.fr/html/upload/
+    scp /tmp/$output keaton:/home/haltode/www/haltode.fr/html/upload/
 
     url="https://haltode.fr/upload/$output"
     echo $url | xsel -ib

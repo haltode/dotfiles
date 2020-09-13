@@ -4,6 +4,8 @@
 
 set -gx PATH $PATH /usr/sbin
 set -gx PATH $PATH ~/scripts
+set -gx PATH $PATH $HOME/.cargo/bin
+set -gx PATH $PATH ~/.local/lib/bin
 
 set -x TEXMFHOME ~/prologin/documents/texmf
 
@@ -47,7 +49,7 @@ alias irc='ssh keaton -t tmux a -t irc'
 # Transmission cli
 function T
     ~/scripts/blocklist
-    transmission-daemon -g ~/.config/transmission-daemon
+    transmission-daemon
     sleep 3
     transmission-remote-cli
 end
